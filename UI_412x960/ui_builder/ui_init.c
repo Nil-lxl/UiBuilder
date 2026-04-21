@@ -12,23 +12,23 @@
 
 ui_manager_t ui_manager;
 
-lv_font_t *fs_droidsansfallback_18;
 lv_font_t *fs_droidsansfallback_140;
+lv_font_t *fs_droidsansfallback_18;
 lv_font_t *fs_montserratmedium_20;
 lv_font_t *fs_montserratmedium_22;
 
 void ui_init(void)
 {
-    fs_droidsansfallback_18 = ui_font_init(LVGL_FONT_PATH(DroidSansFallback.ttf), 18);
     fs_droidsansfallback_140 = ui_font_init(LVGL_FONT_PATH(DroidSansFallback.ttf), 140);
+    fs_droidsansfallback_18 = ui_font_init(LVGL_FONT_PATH(DroidSansFallback.ttf), 18);
     fs_montserratmedium_20 = ui_font_init(LVGL_FONT_PATH(montserratMedium.ttf), 20);
     fs_montserratmedium_22 = ui_font_init(LVGL_FONT_PATH(montserratMedium.ttf), 22);
-    if (!fs_droidsansfallback_18) {
-    	LV_LOG_ERROR("Failed to init fs_droidsansfallback_18");
-    	return;
-    }
     if (!fs_droidsansfallback_140) {
     	LV_LOG_ERROR("Failed to init fs_droidsansfallback_140");
+    	return;
+    }
+    if (!fs_droidsansfallback_18) {
+    	LV_LOG_ERROR("Failed to init fs_droidsansfallback_18");
     	return;
     }
     if (!fs_montserratmedium_20) {

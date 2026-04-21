@@ -179,7 +179,7 @@ void screen_create(ui_manager_t *ui)
     lv_label_set_text(scr->Humidity, "Humidity");
     lv_label_set_long_mode(scr->Humidity, LV_LABEL_LONG_WRAP);
     lv_obj_set_pos(scr->Humidity, 210, 60);
-    lv_obj_set_size(scr->Humidity, 103, 20);
+    lv_obj_set_size(scr->Humidity, 100, 20);
 
     // Set style of scr->Humidity
     lv_obj_set_style_text_align(scr->Humidity, 2, LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -187,10 +187,10 @@ void screen_create(ui_manager_t *ui)
 
     // Init scr->FanSpeed
     scr->FanSpeed = lv_label_create(scr->arc_container);
-    lv_label_set_text(scr->FanSpeed, "Fan Speed\n");
+    lv_label_set_text(scr->FanSpeed, "Fan Speed");
     lv_label_set_long_mode(scr->FanSpeed, LV_LABEL_LONG_WRAP);
-    lv_obj_set_pos(scr->FanSpeed, 36, 60);
-    lv_obj_set_size(scr->FanSpeed, 100, 32);
+    lv_obj_set_pos(scr->FanSpeed, 39, 60);
+    lv_obj_set_size(scr->FanSpeed, 100, 19);
 
     // Set style of scr->FanSpeed
     lv_obj_set_style_text_font(scr->FanSpeed, fs_montserratmedium_16, LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -208,7 +208,7 @@ void screen_create(ui_manager_t *ui)
 
     // Init scr->label_8
     scr->label_8 = lv_label_create(scr->arc_container);
-    lv_label_set_text(scr->label_8, "30%\n");
+    lv_label_set_text(scr->label_8, "30%");
     lv_label_set_long_mode(scr->label_8, LV_LABEL_LONG_WRAP);
     lv_obj_set_pos(scr->label_8, 230, 85);
     lv_obj_set_size(scr->label_8, 60, 18);

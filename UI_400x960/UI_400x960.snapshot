@@ -377,7 +377,7 @@
             <Normal>
               <name>Humidity</name>
               <postion>210,60</postion>
-              <size>103,20</size>
+              <size>100,20</size>
               <scrollbar-mode>0</scrollbar-mode>
               <flag></flag>
             </Normal>
@@ -408,8 +408,8 @@
           <Widget is-hidden="0" name="FanSpeed" parent-id="1776668119478" group-id="-1" type="1" index="3" id="1776757962946">
             <Normal>
               <name>FanSpeed</name>
-              <postion>36,60</postion>
-              <size>100,32</size>
+              <postion>39,60</postion>
+              <size>100,19</size>
               <scrollbar-mode>0</scrollbar-mode>
               <flag></flag>
             </Normal>
@@ -423,7 +423,7 @@
               <use-font-storage>0</use-font-storage>
             </FontStorage>
             <Attribute>
-              <text>Fan Speed\n</text>
+              <text>Fan Speed</text>
               <long-mode>0</long-mode>
               <select-start>-1</select-start>
               <select-end>-1</select-end>
@@ -481,7 +481,7 @@
               <use-font-storage>0</use-font-storage>
             </FontStorage>
             <Attribute>
-              <text>30%\n</text>
+              <text>30%</text>
               <long-mode>0</long-mode>
               <select-start>-1</select-start>
               <select-end>-1</select-end>

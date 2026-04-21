@@ -58,8 +58,8 @@ static inline screen_t *screen_get(ui_manager_t *ui)
 void screen_create(ui_manager_t *ui);
 
 
-extern lv_font_t *fs_droidsansfallback_18;
 extern lv_font_t *fs_droidsansfallback_140;
+extern lv_font_t *fs_droidsansfallback_18;
 extern lv_font_t *fs_montserratmedium_20;
 extern lv_font_t *fs_montserratmedium_22;
 

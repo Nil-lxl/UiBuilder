@@ -37,8 +37,8 @@ void screen_create(ui_manager_t *ui)
     lv_obj_set_scrollbar_mode(scr->obj, LV_SCROLLBAR_MODE_OFF);
 
     // Set style of scr->obj
-    lv_obj_set_style_bg_color(scr->obj, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_img_src(scr->obj, LVGL_IMAGE_PATH(main/bg.png), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_color(scr->obj, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
 
     // Set event handler of scr->obj
     lv_obj_add_event_cb(scr->obj, screen_unload_start, LV_EVENT_SCREEN_UNLOAD_START, NULL);
@@ -68,8 +68,8 @@ void screen_create(ui_manager_t *ui)
     lv_obj_set_size(scr->unit_label, 70, 25);
 
     // Set style of scr->unit_label
-    lv_obj_set_style_text_align(scr->unit_label, 2, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_color(scr->unit_label, lv_color_hex(0x47ffff), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_align(scr->unit_label, 2, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(scr->unit_label, &lv_font_montserrat_24, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     // Init scr->speed_label
@@ -81,9 +81,9 @@ void screen_create(ui_manager_t *ui)
 
     // Set style of scr->speed_label
     lv_obj_set_style_outline_color(scr->speed_label, lv_color_hex(0x55ff7d), LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_text_align(scr->speed_label, 2, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_text_color(scr->speed_label, lv_color_hex(0x47ffff), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_shadow_color(scr->speed_label, lv_color_hex(0xffffff), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_color(scr->speed_label, lv_color_hex(0x47ffff), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_align(scr->speed_label, 2, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(scr->speed_label, fs_droidsansfallback_140, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     // Init scr->temp_arc
@@ -135,12 +135,12 @@ void screen_create(ui_manager_t *ui)
     lv_obj_set_style_border_width(scr->chart_1, 1, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_color(scr->chart_1, lv_color_hex(0x47ffff), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_opa(scr->chart_1, 53, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_line_color(scr->chart_1, lv_color_hex(0x47ffff), LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_line_opa(scr->chart_1, 52, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_shadow_color(scr->chart_1, lv_color_hex(0x47ffff), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_line_width(scr->chart_1, 2, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_line_dash_width(scr->chart_1, 10, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_line_color(scr->chart_1, lv_color_hex(0x47ffff), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_line_opa(scr->chart_1, 52, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_color(scr->chart_1, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_shadow_color(scr->chart_1, lv_color_hex(0x47ffff), LV_PART_MAIN | LV_STATE_DEFAULT);
 
     // Init scr->power_label
     scr->power_label = lv_label_create(scr->obj);
@@ -150,8 +150,8 @@ void screen_create(ui_manager_t *ui)
     lv_obj_set_size(scr->power_label, 121, 25);
 
     // Set style of scr->power_label
-    lv_obj_set_style_text_align(scr->power_label, 2, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_color(scr->power_label, lv_color_hex(0xffffff), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_align(scr->power_label, 2, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(scr->power_label, fs_droidsansfallback_18, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     // Init scr->temp_label
@@ -162,8 +162,8 @@ void screen_create(ui_manager_t *ui)
     lv_obj_set_size(scr->temp_label, 121, 25);
 
     // Set style of scr->temp_label
-    lv_obj_set_style_text_align(scr->temp_label, 2, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_color(scr->temp_label, lv_color_hex(0xffffff), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_align(scr->temp_label, 2, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(scr->temp_label, fs_droidsansfallback_18, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     // Init scr->battemp_label
@@ -174,8 +174,8 @@ void screen_create(ui_manager_t *ui)
     lv_obj_set_size(scr->battemp_label, 121, 25);
 
     // Set style of scr->battemp_label
-    lv_obj_set_style_text_align(scr->battemp_label, 2, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_color(scr->battemp_label, lv_color_hex(0xffffff), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_align(scr->battemp_label, 2, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(scr->battemp_label, fs_droidsansfallback_18, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     // Init scr->bettery_arc
@@ -198,9 +198,9 @@ void screen_create(ui_manager_t *ui)
     lv_obj_set_size(scr->power_num, 45, 20);
 
     // Set style of scr->power_num
+    lv_obj_set_style_text_color(scr->power_num, lv_color_hex(0xff66ff), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_color(scr->power_num, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_align(scr->power_num, 2, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_text_color(scr->power_num, lv_color_hex(0xff66ff), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(scr->power_num, fs_montserratmedium_20, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     // Init scr->temp_num
@@ -211,8 +211,8 @@ void screen_create(ui_manager_t *ui)
     lv_obj_set_size(scr->temp_num, 45, 20);
 
     // Set style of scr->temp_num
-    lv_obj_set_style_text_align(scr->temp_num, 2, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_color(scr->temp_num, lv_color_hex(0x9375ff), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_align(scr->temp_num, 2, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(scr->temp_num, fs_montserratmedium_20, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     // Init scr->battemp_num
@@ -223,8 +223,8 @@ void screen_create(ui_manager_t *ui)
     lv_obj_set_size(scr->battemp_num, 45, 20);
 
     // Set style of scr->battemp_num
-    lv_obj_set_style_text_align(scr->battemp_num, 2, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_color(scr->battemp_num, lv_color_hex(0xfd5353), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_align(scr->battemp_num, 2, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(scr->battemp_num, fs_montserratmedium_20, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     // Init scr->battery_num
@@ -235,8 +235,8 @@ void screen_create(ui_manager_t *ui)
     lv_obj_set_size(scr->battery_num, 60, 28);
 
     // Set style of scr->battery_num
-    lv_obj_set_style_text_align(scr->battery_num, 2, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_color(scr->battery_num, lv_color_hex(0x00ff77), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_align(scr->battery_num, 2, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(scr->battery_num, fs_montserratmedium_22, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     // Init scr->image_1

@@ -84,7 +84,7 @@ void screen_custom_load_start(void) {
     /* 曲线图对象创建 */
     lv_obj_t *chart = scr->temp_chart;
     lv_chart_set_update_mode(chart, LV_CHART_UPDATE_MODE_SHIFT);
-    lv_chart_set_point_count(chart, 200);
+    lv_chart_set_point_count(chart, 80);
     lv_obj_set_style_size(chart, 0, 0, LV_PART_INDICATOR);
     lv_chart_series_t *ser = lv_chart_add_series(chart, lv_color_hex(0xff0080), LV_CHART_AXIS_PRIMARY_Y);
 
@@ -93,7 +93,7 @@ void screen_custom_load_start(void) {
     lv_timer_create(param_arc_timer_cb, 10, NULL);
     lv_timer_create(param_label_timer_cb, 100, NULL);
     lv_timer_create(temp_status_timer_cb, 50, NULL);
-    lv_timer_create(chart_add_data, 500, chart);
+    // lv_timer_create(chart_add_data, 500, chart);
 }
 
 static int temp_arc_direct = 0;
@@ -153,7 +153,11 @@ static void temp_status_timer_cb(lv_timer_t *timer) {
     }
 
     float label_value = (float)(temp_value / 10.0);
-    lv_label_set_text_fmt(scr->temp_label, "%02.1f", label_value);
+
+    char label_value_str[16];
+    snprintf(label_value_str, sizeof(label_value_str), "%02.1f", label_value);
+    lv_label_set_text_fmt(scr->temp_label, "%s", label_value_str);
+    // lv_label_set_text_fmt(scr->temp_label, "%02.1f", label_value);
 
 }
 
