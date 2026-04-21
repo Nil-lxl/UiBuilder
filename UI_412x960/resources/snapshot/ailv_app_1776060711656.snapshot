@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ailv-app>
+  <Screen index="0" name="screen" id="1776050594315" is-default="1">
+    <Normal>
+      <name>screen</name>
+      <scrollbar-mode>0</scrollbar-mode>
+      <flag></flag>
+    </Normal>
+    <Animate>
+      <use-anim>0</use-anim>
+    </Animate>
+    <ImgStorage>
+      <use-img-storage>0</use-img-storage>
+    </ImgStorage>
+    <FontStorage>
+      <use-font-storage>0</use-font-storage>
+    </FontStorage>
+    <Attribute/>
+    <Style>
+      <Part name="Main" value="0">
+        <State name="Default" value="0">
+          <bg-color>#000000</bg-color>
+        </State>
+      </Part>
+    </Style>
+    <Event/>
+    <Widgets>
+      <Widget index="0" name="chart_1" type="29" id="1776060431625" is-hidden="0">
+        <Normal>
+          <name>chart_1</name>
+          <postion>-51,268</postion>
+          <size>666,284</size>
+          <scrollbar-mode>0</scrollbar-mode>
+          <flag></flag>
+        </Normal>
+        <Animate>
+          <use-anim>0</use-anim>
+        </Animate>
+        <ImgStorage>
+          <use-img-storage>0</use-img-storage>
+        </ImgStorage>
+        <FontStorage>
+          <use-font-storage>0</use-font-storage>
+        </FontStorage>
+        <Attribute>
+          <datas>
+            <data>
+              <color>#3cdfca</color>
+              <list>50, 50, 41, 26, 13</list>
+            </data>
+            <data>
+              <color>#947fc6</color>
+              <list>12, 81, 43, 63, 57</list>
+            </data>
+            <data>
+              <color>#95a85a</color>
+              <list>41, 75, 17, 88, 84</list>
+            </data>
+          </datas>
+          <type>1</type>
+          <y-range>3, 109</y-range>
+        </Attribute>
+        <Style>
+          <Part name="Main" value="0">
+            <State name="Default" value="0">
+              <bg-grad-color>#00ffff</bg-grad-color>
+              <bg-grad-dir>1</bg-grad-dir>
+              <bg-main-stop>211</bg-main-stop>
+              <shadow-opa>202</shadow-opa>
+              <line-color>#0000ff</line-color>
+              <shadow-width>50</shadow-width>
+              <shadow-color>#00aaff</shadow-color>
+              <bg-color>#000000</bg-color>
+              <bg-opa>62</bg-opa>
+              <line-width>0</line-width>
+              <border-side>0</border-side>
+              <shadow-spread>20</shadow-spread>
+            </State>
+          </Part>
+        </Style>
+        <Event/>
+      </Widget>
+    </Widgets>
+  </Screen>
+</ailv-app>

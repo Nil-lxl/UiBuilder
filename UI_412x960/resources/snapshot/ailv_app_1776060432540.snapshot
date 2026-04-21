@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ailv-app>
+  <Screen index="0" name="screen" id="1776050594315" is-default="1">
+    <Normal>
+      <name>screen</name>
+      <scrollbar-mode>0</scrollbar-mode>
+      <flag></flag>
+    </Normal>
+    <Animate>
+      <use-anim>0</use-anim>
+    </Animate>
+    <ImgStorage>
+      <use-img-storage>0</use-img-storage>
+    </ImgStorage>
+    <FontStorage>
+      <use-font-storage>0</use-font-storage>
+    </FontStorage>
+    <Attribute/>
+    <Style>
+      <Part name="Main" value="0">
+        <State name="Default" value="0">
+          <bg-color>#000000</bg-color>
+        </State>
+      </Part>
+    </Style>
+    <Event/>
+    <Widgets>
+      <Widget index="0" name="chart_1" type="29" id="1776060431625" is-hidden="0">
+        <Normal>
+          <name>chart_1</name>
+          <postion>125,346</postion>
+          <size>200,150</size>
+          <scrollbar-mode>0</scrollbar-mode>
+          <flag></flag>
+        </Normal>
+        <Animate>
+          <use-anim>0</use-anim>
+        </Animate>
+        <ImgStorage>
+          <use-img-storage>0</use-img-storage>
+        </ImgStorage>
+        <FontStorage>
+          <use-font-storage>0</use-font-storage>
+        </FontStorage>
+        <Attribute>
+          <datas>
+            <data>
+              <color>#8e090b</color>
+              <list>78, 100, 80, 8, 32</list>
+            </data>
+          </datas>
+          <type>1</type>
+          <y-range>0, 100</y-range>
+        </Attribute>
+        <Style/>
+        <Event/>
+      </Widget>
+    </Widgets>
+  </Screen>
+</ailv-app>

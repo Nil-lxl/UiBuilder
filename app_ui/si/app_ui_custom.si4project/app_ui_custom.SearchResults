@@ -1,0 +1,7 @@
+---- ffmpeg_get_image_header Matches (3 in 1 files) ----
+lv_ffmpeg.c (D:\DevTools\ArtInChip\UiBuilder\app_ui\simulator\lvgl\src\libs\ffmpeg) line 78 : 
+static int ffmpeg_get_image_header(const char * path, lv_image_header_t * header);
+decoder_info in lv_ffmpeg.c (D:\DevTools\ArtInChip\UiBuilder\app_ui\simulator\lvgl\src\libs\ffmpeg) : 
+        if(ffmpeg_get_image_header(fn, header) < 0) {
+lv_ffmpeg.c (D:\DevTools\ArtInChip\UiBuilder\app_ui\simulator\lvgl\src\libs\ffmpeg) line 561 : 
+static int ffmpeg_get_image_header(const char * filepath,
