@@ -44,10 +44,13 @@ void screen_custom_load_start(void) {
     lv_style_set_arc_width(&temp_arc_style, 40);
     lv_style_set_arc_opa(&temp_arc_style, 255);
     lv_style_set_arc_color(&temp_arc_style, lv_color_hex(0x63aef4));
-    // lv_style_set_arc_opa(&temp_arc_style, 200);
+    lv_style_set_arc_opa(&temp_arc_style, 0);
     lv_style_set_arc_rounded(&temp_arc_style, 10);
 
     lv_style_init(&temp_arc_bg_style);
+    // lv_style_set_arc_width(&temp_arc_bg_style, 40);
+    lv_style_set_arc_opa(&temp_arc_bg_style, 255);
+    lv_style_set_arc_color(&temp_arc_bg_style, lv_color_hex(0x00aaff));
 
     lv_style_init(&fan_arc_style);
     lv_style_set_arc_color(&fan_arc_style, lv_color_hex(0xff5580));
@@ -81,7 +84,7 @@ void screen_custom_load_start(void) {
     lv_obj_remove_style(hum_arc, NULL, LV_PART_KNOB);
 
 
-    /* 曲线图对象创建 */
+    // /* 曲线图对象创建 */
     lv_obj_t *chart = scr->temp_chart;
     lv_chart_set_update_mode(chart, LV_CHART_UPDATE_MODE_SHIFT);
     lv_chart_set_point_count(chart, 80);
@@ -89,14 +92,16 @@ void screen_custom_load_start(void) {
     lv_chart_series_t *ser = lv_chart_add_series(chart, lv_color_hex(0xff0080), LV_CHART_AXIS_PRIMARY_Y);
 
     /* 定时器创建 */
-    lv_timer_create(temp_arc_timer_cb, 10, NULL);
+    // lv_timer_create(temp_arc_timer_cb, 10, NULL);
     lv_timer_create(param_arc_timer_cb, 10, NULL);
     lv_timer_create(param_label_timer_cb, 100, NULL);
     lv_timer_create(temp_status_timer_cb, 50, NULL);
-    // lv_timer_create(chart_add_data, 500, chart);
+    lv_timer_create(chart_add_data, 500, chart);
 }
 
 static int temp_arc_direct = 0;
+static int temp_arc_value = 160;
+
 static int start_degree = 0;
 static int end_degree = 120;
 static void temp_arc_timer_cb(lv_timer_t *timer) {
@@ -124,12 +129,13 @@ static void temp_status_timer_cb(lv_timer_t *timer) {
     if (temp_direct == 0) {
         temp_value++;
         if (temp_value > 250) { //大于25度，显示加热状态
-            lv_obj_set_style_arc_color(temp_arc, lv_color_hex(0xff6000), LV_PART_INDICATOR);
+            lv_obj_set_style_arc_color(temp_arc, lv_color_hex(0xff6000), LV_PART_MAIN);
             lv_img_set_src(scr->cold_hot, LVGL_IMAGE_PATH(hot_40x40.png));
             lv_obj_set_style_img_recolor(scr->cold_hot, lv_color_hex(0xff6000), LV_PART_MAIN | LV_STATE_DEFAULT);
             // lv_obj_set_style_text_color(scr->temp_label, lv_color_hex(0xff6000), LV_PART_MAIN | LV_STATE_DEFAULT);
             lv_label_set_text(scr->temp_status, "Heating");
-            lv_obj_set_style_shadow_color(scr->temp_cont, lv_color_hex(0xff6000), LV_PART_MAIN | LV_STATE_DEFAULT);
+            // lv_obj_set_style_shadow_color(scr->temp_cont, lv_color_hex(0xff6000), LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_shadow_color(scr->container_2, lv_color_hex(0xff6000), LV_PART_MAIN | LV_STATE_DEFAULT);
         }
         if (temp_value > 350) {
             temp_value = 350;
@@ -138,12 +144,13 @@ static void temp_status_timer_cb(lv_timer_t *timer) {
     } else {
         temp_value--;
         if (temp_value < 250) { //小于25度，显示制冷状态
-            lv_obj_set_style_arc_color(temp_arc, lv_color_hex(0x63aef4), LV_PART_INDICATOR);
+            lv_obj_set_style_arc_color(temp_arc, lv_color_hex(0x63aef4), LV_PART_MAIN);
             lv_img_set_src(scr->cold_hot, LVGL_IMAGE_PATH(cold_40x40.png));
             lv_obj_set_style_img_recolor(scr->cold_hot, lv_color_hex(0x55aaff), LV_PART_MAIN | LV_STATE_DEFAULT);
             // lv_obj_set_style_text_color(scr->temp_label, lv_color_hex(0x55aaff), LV_PART_MAIN | LV_STATE_DEFAULT);
             lv_label_set_text(scr->temp_status, "Colding");
-            lv_obj_set_style_shadow_color(scr->temp_cont, lv_color_hex(0x55aaff), LV_PART_MAIN | LV_STATE_DEFAULT);
+            // lv_obj_set_style_shadow_color(scr->temp_cont, lv_color_hex(0x55aaff), LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_shadow_color(scr->container_2, lv_color_hex(0x00aaff), LV_PART_MAIN | LV_STATE_DEFAULT);
 
         }
         if (temp_value < 160) {

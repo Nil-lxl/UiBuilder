@@ -18,25 +18,11 @@ extern "C" {
 
 typedef struct {
     lv_obj_t *obj;
-    lv_obj_t *logo;
-    lv_obj_t *temp_chart;
-    lv_obj_t *arc_container;
-    lv_obj_t *fan_arc;
-    lv_obj_t *humidity_arc;
-    lv_obj_t *Humidity;
-    lv_obj_t *FanSpeed;
-    lv_obj_t *label_7;
-    lv_obj_t *label_8;
-    lv_obj_t *Chart_title;
-    lv_obj_t *container_2;
-    lv_obj_t *temp_arc;
-    lv_obj_t *temp_cont;
-    lv_obj_t *hot_image;
-    lv_obj_t *cold_hot;
-    lv_obj_t *temp_label;
-    lv_obj_t *temp_status;
-    lv_obj_t *temp_uint;
-    lv_obj_t *chart_title;
+    lv_obj_t *disp_area;
+    lv_obj_t *grad_bar1;
+    lv_obj_t *grad_bar2;
+    lv_obj_t *grad_bar3;
+    lv_obj_t *grad_bar4;
 } screen_t;
 
 
@@ -61,10 +47,6 @@ static inline screen_t *screen_get(ui_manager_t *ui)
 void screen_create(ui_manager_t *ui);
 
 
-extern lv_font_t *fs_montserratmedium_16;
-extern lv_font_t *fs_droidsansfallback_22;
-extern lv_font_t *fs_droidsansfallback_70;
-extern lv_font_t *fs_droidsansfallback_20;
 
 
 extern ui_manager_t ui_manager;
