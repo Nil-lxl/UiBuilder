@@ -12,39 +12,33 @@
 
 ui_manager_t ui_manager;
 
-lv_font_t *fs_droidsansfallback_60;
+lv_font_t *fs_montserratmedium_16;
 lv_font_t *fs_montserratmedium_18;
-lv_font_t *fs_montserratmedium_23;
-lv_font_t *fs_montserratmedium_25;
 lv_font_t *fs_montserratmedium_26;
 lv_font_t *fs_montserratmedium_28;
+lv_font_t *fs_montserratmedium_23;
+lv_font_t *fs_droidsansfallback_60;
+lv_font_t *fs_montserratmedium_25;
 lv_font_t *fs_droidsansfallback_25;
 lv_font_t *fs_droidsansfallback_22;
 
 void ui_init(void)
 {
-    fs_droidsansfallback_60 = ui_font_init(LVGL_FONT_PATH(DroidSansFallback.ttf), 60);
+    fs_montserratmedium_16 = ui_font_init(LVGL_FONT_PATH(montserratMedium.ttf), 16);
     fs_montserratmedium_18 = ui_font_init(LVGL_FONT_PATH(montserratMedium.ttf), 18);
-    fs_montserratmedium_23 = ui_font_init(LVGL_FONT_PATH(montserratMedium.ttf), 23);
-    fs_montserratmedium_25 = ui_font_init(LVGL_FONT_PATH(montserratMedium.ttf), 25);
     fs_montserratmedium_26 = ui_font_init(LVGL_FONT_PATH(montserratMedium.ttf), 26);
     fs_montserratmedium_28 = ui_font_init(LVGL_FONT_PATH(montserratMedium.ttf), 28);
+    fs_montserratmedium_23 = ui_font_init(LVGL_FONT_PATH(montserratMedium.ttf), 23);
+    fs_droidsansfallback_60 = ui_font_init(LVGL_FONT_PATH(DroidSansFallback.ttf), 60);
+    fs_montserratmedium_25 = ui_font_init(LVGL_FONT_PATH(montserratMedium.ttf), 25);
     fs_droidsansfallback_25 = ui_font_init(LVGL_FONT_PATH(DroidSansFallback.ttf), 25);
     fs_droidsansfallback_22 = ui_font_init(LVGL_FONT_PATH(DroidSansFallback.ttf), 22);
-    if (!fs_droidsansfallback_60) {
-    	LV_LOG_ERROR("Failed to init fs_droidsansfallback_60");
+    if (!fs_montserratmedium_16) {
+    	LV_LOG_ERROR("Failed to init fs_montserratmedium_16");
     	return;
     }
     if (!fs_montserratmedium_18) {
     	LV_LOG_ERROR("Failed to init fs_montserratmedium_18");
-    	return;
-    }
-    if (!fs_montserratmedium_23) {
-    	LV_LOG_ERROR("Failed to init fs_montserratmedium_23");
-    	return;
-    }
-    if (!fs_montserratmedium_25) {
-    	LV_LOG_ERROR("Failed to init fs_montserratmedium_25");
     	return;
     }
     if (!fs_montserratmedium_26) {
@@ -53,6 +47,18 @@ void ui_init(void)
     }
     if (!fs_montserratmedium_28) {
     	LV_LOG_ERROR("Failed to init fs_montserratmedium_28");
+    	return;
+    }
+    if (!fs_montserratmedium_23) {
+    	LV_LOG_ERROR("Failed to init fs_montserratmedium_23");
+    	return;
+    }
+    if (!fs_droidsansfallback_60) {
+    	LV_LOG_ERROR("Failed to init fs_droidsansfallback_60");
+    	return;
+    }
+    if (!fs_montserratmedium_25) {
+    	LV_LOG_ERROR("Failed to init fs_montserratmedium_25");
     	return;
     }
     if (!fs_droidsansfallback_25) {

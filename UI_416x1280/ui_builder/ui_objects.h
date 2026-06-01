@@ -23,6 +23,32 @@ typedef struct {
     lv_obj_t *grad_bar2;
     lv_obj_t *grad_bar3;
     lv_obj_t *grad_bar4;
+    lv_obj_t *bars_cont;
+    lv_obj_t *music_bar1;
+    lv_obj_t *music_bar2;
+    lv_obj_t *music_bar3;
+    lv_obj_t *music_bar4;
+    lv_obj_t *music_bar5;
+    lv_obj_t *music_bar6;
+    lv_obj_t *container_2;
+    lv_obj_t *arc_cont;
+    lv_obj_t *pct_num;
+    lv_obj_t *arc_1;
+    lv_obj_t *label_2;
+    lv_obj_t *money_num;
+    lv_obj_t *label_4;
+    lv_obj_t *image_1;
+    lv_obj_t *container_1;
+    lv_obj_t *image_7;
+    lv_obj_t *image_8;
+    lv_obj_t *image_9;
+    lv_obj_t *image_10;
+    lv_obj_t *image_11;
+    lv_obj_t *image_12;
+    lv_obj_t *volume_label;
+    lv_obj_t *dropdown_cont;
+    lv_obj_t *dropdown_1;
+    lv_obj_t *slider_1;
 } screen_t;
 
 
@@ -47,6 +73,10 @@ static inline screen_t *screen_get(ui_manager_t *ui)
 void screen_create(ui_manager_t *ui);
 
 
+extern lv_font_t *fs_montserratmedium_16;
+extern lv_font_t *fs_montserratmedium_20;
+extern lv_font_t *fs_montserratmedium_30;
+extern lv_font_t *fs_montserratmedium_18;
 
 
 extern ui_manager_t ui_manager;

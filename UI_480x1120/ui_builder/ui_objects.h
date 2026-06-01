@@ -29,6 +29,8 @@ typedef struct {
     lv_obj_t *label_8;
     lv_obj_t *label_9;
     lv_obj_t *label_17;
+    lv_obj_t *image_2;
+    lv_obj_t *image_3;
     lv_obj_t *data_cont;
     lv_obj_t *fio2_num;
     lv_obj_t *peepe_num;
@@ -46,6 +48,9 @@ typedef struct {
     lv_obj_t *container_7;
     lv_obj_t *vt_2;
     lv_obj_t *label_31;
+    lv_obj_t *image_4;
+    lv_obj_t *button_1;
+    lv_obj_t *image_5;
 } screen_t;
 
 
@@ -70,12 +75,13 @@ static inline screen_t *screen_get(ui_manager_t *ui)
 void screen_create(ui_manager_t *ui);
 
 
-extern lv_font_t *fs_droidsansfallback_60;
+extern lv_font_t *fs_montserratmedium_16;
 extern lv_font_t *fs_montserratmedium_18;
-extern lv_font_t *fs_montserratmedium_23;
-extern lv_font_t *fs_montserratmedium_25;
 extern lv_font_t *fs_montserratmedium_26;
 extern lv_font_t *fs_montserratmedium_28;
+extern lv_font_t *fs_montserratmedium_23;
+extern lv_font_t *fs_droidsansfallback_60;
+extern lv_font_t *fs_montserratmedium_25;
 extern lv_font_t *fs_droidsansfallback_25;
 extern lv_font_t *fs_droidsansfallback_22;
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ailv-app>
-  <Screen id="1776848761117" name="screen" index="0" is-default="1">
+  <Screen index="0" name="screen" id="1776848761117" is-default="1">
     <Normal>
       <name>screen</name>
       <scrollbar-mode>0</scrollbar-mode>
@@ -17,22 +17,22 @@
     </FontStorage>
     <Attribute/>
     <Style>
-      <Part name="Main" value="0">
-        <State name="Default" value="0">
+      <Part value="0" name="Main">
+        <State value="0" name="Default">
           <bg-color>#000000</bg-color>
         </State>
       </Part>
     </Style>
     <Event>
-      <LoadStart itemIdx="-1" eventId="38">
+      <LoadStart eventId="38" itemIdx="-1">
         <custom-fun>screen_custom_load_start</custom-fun>
       </LoadStart>
     </Event>
     <Widgets>
-      <Widget id="1776848803227" name="disp_area" is-hidden="0" type="28" index="0">
+      <Widget type="28" is-hidden="0" index="0" name="disp_area" id="1776848803227">
         <Normal>
           <name>disp_area</name>
-          <postion>16,0</postion>
+          <postion>32,0</postion>
           <size>416,1280</size>
           <scrollbar-mode>0</scrollbar-mode>
           <flag></flag>
@@ -48,26 +48,26 @@
         </FontStorage>
         <Attribute/>
         <Style>
-          <Part name="Main" value="0">
-            <State name="Default" value="0">
+          <Part value="0" name="Main">
+            <State value="0" name="Default">
               <bg-color>#e2d9db</bg-color>
-              <pad-right>0</pad-right>
               <radius>0</radius>
+              <bg-grad-color>#3f3cfa</bg-grad-color>
+              <pad-right>0</pad-right>
+              <border-width>0</border-width>
               <pad-left>0</pad-left>
               <pad-bottom>0</pad-bottom>
               <pad-top>0</pad-top>
-              <bg-grad-color>#3f3cfa</bg-grad-color>
-              <border-width>0</border-width>
             </State>
           </Part>
         </Style>
         <Event/>
         <Children>
-          <Widget id="1776849094207" group-id="-1" name="grad_bar1" parent-id="1776848803227" is-hidden="0" type="6" index="0">
+          <Widget parent-id="1776848803227" type="6" group-id="-1" is-hidden="0" index="0" name="grad_bar1" id="1776849094207">
             <Normal>
               <name>grad_bar1</name>
-              <postion>58,100</postion>
-              <size>300,30</size>
+              <postion>33,120</postion>
+              <size>350,30</size>
               <scrollbar-mode>0</scrollbar-mode>
               <flag></flag>
             </Normal>
@@ -89,8 +89,8 @@
               <is-animate>0</is-animate>
             </Attribute>
             <Style>
-              <Part name="Main" value="0">
-                <State name="Default" value="0">
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
                   <bg-opa>255</bg-opa>
                   <bg-color>#191a1e</bg-color>
                 </State>
@@ -98,11 +98,11 @@
             </Style>
             <Event/>
           </Widget>
-          <Widget id="1776849640362" group-id="-1" name="grad_bar2" parent-id="1776848803227" is-hidden="0" type="6" index="1">
+          <Widget parent-id="1776848803227" type="6" group-id="-1" is-hidden="0" index="1" name="grad_bar2" id="1776849640362">
             <Normal>
               <name>grad_bar2</name>
-              <postion>58,150</postion>
-              <size>300,30</size>
+              <postion>33,170</postion>
+              <size>350,30</size>
               <scrollbar-mode>0</scrollbar-mode>
               <flag></flag>
             </Normal>
@@ -124,8 +124,8 @@
               <is-animate>0</is-animate>
             </Attribute>
             <Style>
-              <Part name="Main" value="0">
-                <State name="Default" value="0">
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
                   <bg-opa>255</bg-opa>
                   <bg-color>#191a1e</bg-color>
                 </State>
@@ -133,11 +133,11 @@
             </Style>
             <Event/>
           </Widget>
-          <Widget id="1776849659020" group-id="-1" name="grad_bar3" parent-id="1776848803227" is-hidden="0" type="6" index="2">
+          <Widget parent-id="1776848803227" type="6" group-id="-1" is-hidden="0" index="2" name="grad_bar3" id="1776849659020">
             <Normal>
               <name>grad_bar3</name>
-              <postion>58,200</postion>
-              <size>300,30</size>
+              <postion>33,220</postion>
+              <size>350,30</size>
               <scrollbar-mode>0</scrollbar-mode>
               <flag></flag>
             </Normal>
@@ -159,8 +159,8 @@
               <is-animate>0</is-animate>
             </Attribute>
             <Style>
-              <Part name="Main" value="0">
-                <State name="Default" value="0">
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
                   <bg-opa>255</bg-opa>
                   <bg-color>#191a1e</bg-color>
                 </State>
@@ -168,11 +168,11 @@
             </Style>
             <Event/>
           </Widget>
-          <Widget id="1776849660761" group-id="-1" name="grad_bar4" parent-id="1776848803227" is-hidden="0" type="6" index="3">
+          <Widget parent-id="1776848803227" type="6" group-id="-1" is-hidden="0" index="3" name="grad_bar4" id="1776849660761">
             <Normal>
               <name>grad_bar4</name>
-              <postion>58,250</postion>
-              <size>300,30</size>
+              <postion>33,270</postion>
+              <size>350,30</size>
               <scrollbar-mode>0</scrollbar-mode>
               <flag></flag>
             </Normal>
@@ -194,8 +194,8 @@
               <is-animate>0</is-animate>
             </Attribute>
             <Style>
-              <Part name="Main" value="0">
-                <State name="Default" value="0">
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
                   <bg-opa>255</bg-opa>
                   <bg-color>#191a1e</bg-color>
                 </State>
@@ -203,7 +203,900 @@
             </Style>
             <Event/>
           </Widget>
+          <Widget parent-id="1776848803227" type="28" group-id="-1" is-hidden="0" index="4" name="bars_cont" id="1776850870381">
+            <Normal>
+              <name>bars_cont</name>
+              <postion>28,350</postion>
+              <size>360,200</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute/>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <bg-color>#191a1e</bg-color>
+                  <radius>30</radius>
+                  <pad-right>0</pad-right>
+                  <border-width>0</border-width>
+                  <pad-left>0</pad-left>
+                  <pad-bottom>0</pad-bottom>
+                  <pad-top>0</pad-top>
+                </State>
+              </Part>
+            </Style>
+            <Event/>
+            <Children>
+              <Widget parent-id="1776850870381" type="6" group-id="-1" is-hidden="0" index="0" name="music_bar1" id="1776904318490">
+                <Normal>
+                  <name>music_bar1</name>
+                  <postion>40,25</postion>
+                  <size>20,150</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <mode>0</mode>
+                  <min-value>0</min-value>
+                  <max-value>100</max-value>
+                  <start-value>0</start-value>
+                  <value>40</value>
+                  <is-animate>0</is-animate>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <bg-opa>0</bg-opa>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+              <Widget parent-id="1776850870381" type="6" group-id="-1" is-hidden="0" index="1" name="music_bar2" id="1776904386219">
+                <Normal>
+                  <name>music_bar2</name>
+                  <postion>90,25</postion>
+                  <size>20,150</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <mode>0</mode>
+                  <min-value>0</min-value>
+                  <max-value>100</max-value>
+                  <start-value>0</start-value>
+                  <value>60</value>
+                  <is-animate>0</is-animate>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <bg-opa>0</bg-opa>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+              <Widget parent-id="1776850870381" type="6" group-id="-1" is-hidden="0" index="2" name="music_bar3" id="1776904391139">
+                <Normal>
+                  <name>music_bar3</name>
+                  <postion>140,25</postion>
+                  <size>20,150</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <mode>0</mode>
+                  <min-value>0</min-value>
+                  <max-value>100</max-value>
+                  <start-value>0</start-value>
+                  <value>50</value>
+                  <is-animate>0</is-animate>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <bg-opa>0</bg-opa>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+              <Widget parent-id="1776850870381" type="6" group-id="-1" is-hidden="0" index="3" name="music_bar4" id="1776904392851">
+                <Normal>
+                  <name>music_bar4</name>
+                  <postion>190,25</postion>
+                  <size>20,150</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <mode>0</mode>
+                  <min-value>0</min-value>
+                  <max-value>100</max-value>
+                  <start-value>0</start-value>
+                  <value>80</value>
+                  <is-animate>0</is-animate>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <bg-opa>0</bg-opa>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+              <Widget parent-id="1776850870381" type="6" group-id="-1" is-hidden="0" index="4" name="music_bar5" id="1776904394250">
+                <Normal>
+                  <name>music_bar5</name>
+                  <postion>240,25</postion>
+                  <size>20,150</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <mode>0</mode>
+                  <min-value>0</min-value>
+                  <max-value>100</max-value>
+                  <start-value>0</start-value>
+                  <value>70</value>
+                  <is-animate>0</is-animate>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <bg-opa>0</bg-opa>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+              <Widget parent-id="1776850870381" type="6" group-id="-1" is-hidden="0" index="5" name="music_bar6" id="1776904432195">
+                <Normal>
+                  <name>music_bar6</name>
+                  <postion>290,25</postion>
+                  <size>20,150</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <mode>0</mode>
+                  <min-value>0</min-value>
+                  <max-value>100</max-value>
+                  <start-value>0</start-value>
+                  <value>50</value>
+                  <is-animate>0</is-animate>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <bg-opa>0</bg-opa>
+                      <bg-color>#000000</bg-color>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+            </Children>
+          </Widget>
+          <Widget parent-id="1776848803227" type="28" group-id="-1" is-hidden="0" index="5" name="container_2" id="1776850924607">
+            <Normal>
+              <name>container_2</name>
+              <postion>33,600</postion>
+              <size>350,180</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute/>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <bg-color>#123dfe</bg-color>
+                  <radius>30</radius>
+                  <bg-grad-color>#d135f0</bg-grad-color>
+                  <pad-right>0</pad-right>
+                  <bg-grad-stop>213</bg-grad-stop>
+                  <border-width>0</border-width>
+                  <pad-left>0</pad-left>
+                  <bg-grad-dir>1</bg-grad-dir>
+                  <pad-bottom>0</pad-bottom>
+                  <pad-top>0</pad-top>
+                </State>
+              </Part>
+            </Style>
+            <Event/>
+            <Children>
+              <Widget parent-id="1776850924607" type="28" group-id="-1" is-hidden="0" index="0" name="arc_cont" id="1776851057536">
+                <Normal>
+                  <name>arc_cont</name>
+                  <postion>15,15</postion>
+                  <size>150,150</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute/>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <bg-opa>86</bg-opa>
+                      <bg-color>#191a1e</bg-color>
+                      <radius>100</radius>
+                      <pad-right>0</pad-right>
+                      <border-width>0</border-width>
+                      <pad-left>0</pad-left>
+                      <pad-bottom>0</pad-bottom>
+                      <pad-top>0</pad-top>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+                <Children>
+                  <Widget parent-id="1776851057536" type="1" group-id="-1" is-hidden="0" index="0" name="pct_num" id="1776904156397">
+                    <Normal>
+                      <name>pct_num</name>
+                      <postion>53,64</postion>
+                      <size>44,21</size>
+                      <scrollbar-mode>0</scrollbar-mode>
+                      <flag></flag>
+                    </Normal>
+                    <Animate>
+                      <use-anim>0</use-anim>
+                    </Animate>
+                    <ImgStorage>
+                      <use-img-storage>0</use-img-storage>
+                    </ImgStorage>
+                    <FontStorage>
+                      <use-font-storage>0</use-font-storage>
+                    </FontStorage>
+                    <Attribute>
+                      <text>75%</text>
+                      <long-mode>0</long-mode>
+                      <select-start>-1</select-start>
+                      <select-end>-1</select-end>
+                    </Attribute>
+                    <Style>
+                      <Part value="0" name="Main">
+                        <State value="0" name="Default">
+                          <text-font-size>20</text-font-size>
+                          <text-align>2</text-align>
+                          <text-color>#ffffff</text-color>
+                        </State>
+                      </Part>
+                    </Style>
+                    <Event/>
+                  </Widget>
+                  <Widget parent-id="1776851057536" type="12" group-id="-1" is-hidden="0" index="1" name="arc_1" id="1776851111657">
+                    <Normal>
+                      <name>arc_1</name>
+                      <postion>15,15</postion>
+                      <size>120,120</size>
+                      <scrollbar-mode>0</scrollbar-mode>
+                      <flag></flag>
+                    </Normal>
+                    <Animate>
+                      <use-anim>0</use-anim>
+                    </Animate>
+                    <ImgStorage>
+                      <use-img-storage>0</use-img-storage>
+                    </ImgStorage>
+                    <FontStorage>
+                      <use-font-storage>0</use-font-storage>
+                    </FontStorage>
+                    <Attribute>
+                      <mode>0</mode>
+                      <min-value>0</min-value>
+                      <max-value>100</max-value>
+                      <value>75</value>
+                      <angle-start>0</angle-start>
+                      <angle-end>270</angle-end>
+                      <bg-angle-start>0</bg-angle-start>
+                      <bg-angle-end>360</bg-angle-end>
+                      <rotate>0</rotate>
+                      <change-rate>720</change-rate>
+                    </Attribute>
+                    <Style>
+                      <Part value="0" name="Main">
+                        <State value="0" name="Default">
+                          <arc-opa>0</arc-opa>
+                          <arc-rounded>0</arc-rounded>
+                          <arc-width>20</arc-width>
+                        </State>
+                      </Part>
+                    </Style>
+                    <Event/>
+                  </Widget>
+                </Children>
+              </Widget>
+              <Widget parent-id="1776850924607" type="1" group-id="-1" is-hidden="0" index="1" name="label_2" id="1776913414033">
+                <Normal>
+                  <name>label_2</name>
+                  <postion>195,60</postion>
+                  <size>26,30</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <text>$</text>
+                  <long-mode>0</long-mode>
+                  <select-start>-1</select-start>
+                  <select-end>-1</select-end>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <text-font-size>30</text-font-size>
+                      <text-align>2</text-align>
+                      <text-color>#ffffff</text-color>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+              <Widget parent-id="1776850924607" type="1" group-id="-1" is-hidden="0" index="2" name="money_num" id="1776913615664">
+                <Normal>
+                  <name>money_num</name>
+                  <postion>200,60</postion>
+                  <size>106,30</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <text>10k</text>
+                  <long-mode>0</long-mode>
+                  <select-start>-1</select-start>
+                  <select-end>-1</select-end>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <text-font-size>30</text-font-size>
+                      <text-align>2</text-align>
+                      <text-color>#ffffff</text-color>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+              <Widget parent-id="1776850924607" type="1" group-id="-1" is-hidden="0" index="3" name="label_4" id="1776913700008">
+                <Normal>
+                  <name>label_4</name>
+                  <postion>155,115</postion>
+                  <size>185,24</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <text>Monthly Revenue</text>
+                  <long-mode>0</long-mode>
+                  <select-start>-1</select-start>
+                  <select-end>-1</select-end>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <text-font-size>18</text-font-size>
+                      <text-align>2</text-align>
+                      <text-color>#ffffff</text-color>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+            </Children>
+          </Widget>
+          <Widget parent-id="1776848803227" type="5" group-id="-1" is-hidden="0" index="6" name="image_1" id="1776908390064">
+            <Normal>
+              <name>image_1</name>
+              <postion>58,10</postion>
+              <size>300,86</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute>
+              <src>logo.png</src>
+              <center-x>50</center-x>
+              <center-y>50</center-y>
+              <offset-x>0</offset-x>
+              <offset-y>0</offset-y>
+              <rotate>0</rotate>
+            </Attribute>
+            <Style/>
+            <Event/>
+          </Widget>
+          <Widget parent-id="1776848803227" type="28" group-id="-1" is-hidden="0" index="7" name="container_1" id="1776914784687">
+            <Normal>
+              <name>container_1</name>
+              <postion>18,910</postion>
+              <size>380,100</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute/>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <bg-opa>0</bg-opa>
+                  <bg-color>#eff8f5</bg-color>
+                  <radius>27</radius>
+                  <pad-right>0</pad-right>
+                  <border-color>#191a1e</border-color>
+                  <pad-left>0</pad-left>
+                  <pad-bottom>0</pad-bottom>
+                  <pad-top>0</pad-top>
+                </State>
+              </Part>
+            </Style>
+            <Event/>
+            <Children>
+              <Widget parent-id="1776914784687" type="5" group-id="-1" is-hidden="0" index="0" name="image_7" id="1776914609636">
+                <Normal>
+                  <name>image_7</name>
+                  <postion>13,23</postion>
+                  <size>50,50</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <src>ui1.png</src>
+                  <center-x>50</center-x>
+                  <center-y>50</center-y>
+                  <offset-x>0</offset-x>
+                  <offset-y>0</offset-y>
+                  <rotate>0</rotate>
+                </Attribute>
+                <Style/>
+                <Event/>
+              </Widget>
+              <Widget parent-id="1776914784687" type="5" group-id="-1" is-hidden="0" index="1" name="image_8" id="1776914701950">
+                <Normal>
+                  <name>image_8</name>
+                  <postion>88,23</postion>
+                  <size>50,50</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <src>ui2.png</src>
+                  <center-x>50</center-x>
+                  <center-y>50</center-y>
+                  <offset-x>0</offset-x>
+                  <offset-y>0</offset-y>
+                  <rotate>0</rotate>
+                </Attribute>
+                <Style/>
+                <Event/>
+              </Widget>
+              <Widget parent-id="1776914784687" type="5" group-id="-1" is-hidden="0" index="2" name="image_9" id="1776914702654">
+                <Normal>
+                  <name>image_9</name>
+                  <postion>163,23</postion>
+                  <size>50,50</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <src>ui3.png</src>
+                  <center-x>50</center-x>
+                  <center-y>50</center-y>
+                  <offset-x>0</offset-x>
+                  <offset-y>0</offset-y>
+                  <rotate>0</rotate>
+                </Attribute>
+                <Style/>
+                <Event/>
+              </Widget>
+              <Widget parent-id="1776914784687" type="5" group-id="-1" is-hidden="0" index="3" name="image_10" id="1776914703038">
+                <Normal>
+                  <name>image_10</name>
+                  <postion>238,23</postion>
+                  <size>50,50</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <src>ui4.png</src>
+                  <center-x>50</center-x>
+                  <center-y>50</center-y>
+                  <offset-x>0</offset-x>
+                  <offset-y>0</offset-y>
+                  <rotate>0</rotate>
+                </Attribute>
+                <Style/>
+                <Event/>
+              </Widget>
+              <Widget parent-id="1776914784687" type="5" group-id="-1" is-hidden="0" index="4" name="image_11" id="1776914703685">
+                <Normal>
+                  <name>image_11</name>
+                  <postion>313,23</postion>
+                  <size>50,50</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <src>ui5.png</src>
+                  <center-x>50</center-x>
+                  <center-y>50</center-y>
+                  <offset-x>0</offset-x>
+                  <offset-y>0</offset-y>
+                  <rotate>0</rotate>
+                </Attribute>
+                <Style/>
+                <Event/>
+              </Widget>
+            </Children>
+          </Widget>
+          <Widget parent-id="1776848803227" type="5" group-id="-1" is-hidden="0" index="8" name="image_12" id="1776915136688">
+            <Normal>
+              <name>image_12</name>
+              <postion>17,812</postion>
+              <size>60,60</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute>
+              <src>ui6.png</src>
+              <center-x>50</center-x>
+              <center-y>50</center-y>
+              <offset-x>0</offset-x>
+              <offset-y>0</offset-y>
+              <rotate>0</rotate>
+            </Attribute>
+            <Style/>
+            <Event/>
+          </Widget>
+          <Widget parent-id="1776848803227" type="1" group-id="-1" is-hidden="0" index="9" name="volume_label" id="1776915375372">
+            <Normal>
+              <name>volume_label</name>
+              <postion>171,869</postion>
+              <size>144,20</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute>
+              <text>Volume: 80</text>
+              <long-mode>0</long-mode>
+              <select-start>-1</select-start>
+              <select-end>-1</select-end>
+            </Attribute>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <text-font-size>20</text-font-size>
+                  <text-align>2</text-align>
+                  <text-color>#191a1e</text-color>
+                </State>
+              </Part>
+            </Style>
+            <Event/>
+          </Widget>
+          <Widget parent-id="1776848803227" type="28" group-id="-1" is-hidden="0" index="10" name="dropdown_cont" id="1776924925100">
+            <Normal>
+              <name>dropdown_cont</name>
+              <postion>18,1050</postion>
+              <size>380,200</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute/>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <bg-color>#191a1e</bg-color>
+                  <radius>20</radius>
+                  <pad-right>0</pad-right>
+                  <pad-left>0</pad-left>
+                  <border-width>0</border-width>
+                  <pad-bottom>0</pad-bottom>
+                  <pad-top>0</pad-top>
+                </State>
+              </Part>
+            </Style>
+            <Event/>
+            <Children>
+              <Widget parent-id="1776924925100" type="7" group-id="-1" is-hidden="0" index="0" name="dropdown_1" id="1776924106513">
+                <Normal>
+                  <name>dropdown_1</name>
+                  <postion>43,15</postion>
+                  <size>300,50</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <options>
+                    <option>Option1</option>
+                    <option>Option2</option>
+                    <option>Option3</option>
+                  </options>
+                  <dir>8</dir>
+                  <symbol></symbol>
+                  <is-open>1</is-open>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <text-font-size>18</text-font-size>
+                      <bg-color>#191a1e</bg-color>
+                      <radius>20</radius>
+                      <text-color>#ffffff</text-color>
+                      <border-opa>164</border-opa>
+                      <pad-right>20</pad-right>
+                      <border-color>#d135f0</border-color>
+                      <pad-left>20</pad-left>
+                      <border-width>0</border-width>
+                      <pad-top>13</pad-top>
+                    </State>
+                  </Part>
+                  <Part value="262144" name="Selected">
+                    <State value="1" name="Checked">
+                      <bg-color>#123dfe</bg-color>
+                      <radius>20</radius>
+                      <bg-grad-color>#d135f0</bg-grad-color>
+                      <border-color>#123dfe</border-color>
+                      <bg-grad-dir>2</bg-grad-dir>
+                    </State>
+                  </Part>
+                  <Part value="589824" name="List">
+                    <State value="0" name="Default">
+                      <bg-color>#191a1e</bg-color>
+                      <radius>0</radius>
+                      <text-color>#ffffff</text-color>
+                      <border-color>#d135f0</border-color>
+                      <border-width>0</border-width>
+                    </State>
+                  </Part>
+                  <Part value="65536" name="Scrollbar">
+                    <State value="0" name="Default">
+                      <bg-opa>0</bg-opa>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+            </Children>
+          </Widget>
         </Children>
+      </Widget>
+      <Widget type="8" is-hidden="0" index="1" name="slider_1" id="1776909815001">
+        <Normal>
+          <name>slider_1</name>
+          <postion>120,830</postion>
+          <size>300,25</size>
+          <scrollbar-mode>0</scrollbar-mode>
+          <flag></flag>
+        </Normal>
+        <Animate>
+          <use-anim>0</use-anim>
+        </Animate>
+        <ImgStorage>
+          <use-img-storage>0</use-img-storage>
+        </ImgStorage>
+        <FontStorage>
+          <use-font-storage>0</use-font-storage>
+        </FontStorage>
+        <Attribute>
+          <mode>0</mode>
+          <min-value>0</min-value>
+          <max-value>100</max-value>
+          <left-value>0</left-value>
+          <value>50</value>
+        </Attribute>
+        <Style>
+          <Part value="0" name="Main">
+            <State value="0" name="Default">
+              <bg-opa>255</bg-opa>
+              <bg-color>#191a1e</bg-color>
+            </State>
+          </Part>
+        </Style>
+        <Event/>
       </Widget>
     </Widgets>
   </Screen>
