@@ -1,0 +1,3214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ailv-app>
+  <Screen index="0" is-default="1" id="1781764894376" name="scrMain">
+    <Normal>
+      <name>scrMain</name>
+      <scrollbar-mode>0</scrollbar-mode>
+      <flag></flag>
+    </Normal>
+    <Animate>
+      <use-anim>0</use-anim>
+    </Animate>
+    <ImgStorage>
+      <use-img-storage>0</use-img-storage>
+    </ImgStorage>
+    <FontStorage>
+      <use-font-storage>0</use-font-storage>
+    </FontStorage>
+    <Attribute/>
+    <Style>
+      <Part value="0" name="Main">
+        <State value="0" name="Default">
+          <bg-img-recolor>#00aaff</bg-img-recolor>
+          <bg-img-opa>142</bg-img-opa>
+          <bg-grad-color>#20130b</bg-grad-color>
+          <bg-color>#26190f</bg-color>
+        </State>
+      </Part>
+    </Style>
+    <Event>
+      <LoadStart eventId="38" itemIdx="-1">
+        <custom-fun>scrMain_custom_load_start</custom-fun>
+      </LoadStart>
+    </Event>
+    <Widgets>
+      <Widget index="0" is-hidden="0" type="28" id="1781772049986" name="cont_datetime">
+        <Normal>
+          <name>cont_datetime</name>
+          <postion>0,200</postion>
+          <size>700,300</size>
+          <scrollbar-mode>0</scrollbar-mode>
+          <flag></flag>
+        </Normal>
+        <Animate>
+          <use-anim>0</use-anim>
+        </Animate>
+        <ImgStorage>
+          <use-img-storage>0</use-img-storage>
+        </ImgStorage>
+        <FontStorage>
+          <use-font-storage>0</use-font-storage>
+        </FontStorage>
+        <Attribute/>
+        <Style>
+          <Part value="0" name="Main">
+            <State value="0" name="Default">
+              <bg-opa>0</bg-opa>
+              <radius>0</radius>
+              <pad-left>0</pad-left>
+              <pad-right>0</pad-right>
+              <pad-top>0</pad-top>
+              <pad-bottom>0</pad-bottom>
+              <border-width>0</border-width>
+              <bg-color>#eff8f5</bg-color>
+            </State>
+          </Part>
+        </Style>
+        <Event/>
+        <Children>
+          <Widget index="0" parent-id="1781772049986" is-hidden="0" group-id="-1" type="1" id="1781772009552" name="label_time">
+            <Normal>
+              <name>label_time</name>
+              <postion>50,120</postion>
+              <size>400,180</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute>
+              <text>09:58</text>
+              <long-mode>0</long-mode>
+              <select-start>-1</select-start>
+              <select-end>-1</select-end>
+            </Attribute>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <text-color>#ffffff</text-color>
+                  <text-font-path>DroidSansFallback.ttf</text-font-path>
+                  <text-font-size>140</text-font-size>
+                </State>
+              </Part>
+            </Style>
+            <Event/>
+          </Widget>
+          <Widget index="1" parent-id="1781772049986" is-hidden="0" group-id="-1" type="1" id="1781771928254" name="label_date">
+            <Normal>
+              <name>label_date</name>
+              <postion>50,8</postion>
+              <size>600,100</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute>
+              <text>Wednesday,1 August</text>
+              <long-mode>0</long-mode>
+              <select-start>-1</select-start>
+              <select-end>-1</select-end>
+            </Attribute>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <text-color>#ffffff</text-color>
+                  <text-font-path>DroidSansFallback.ttf</text-font-path>
+                  <text-font-size>60</text-font-size>
+                </State>
+              </Part>
+            </Style>
+            <Event/>
+          </Widget>
+        </Children>
+      </Widget>
+      <Widget index="1" is-hidden="0" type="28" id="1781773155899" name="cont_item">
+        <Normal>
+          <name>cont_item</name>
+          <postion>0,704</postion>
+          <size>1920,400</size>
+          <scrollbar-mode>0</scrollbar-mode>
+          <flag></flag>
+        </Normal>
+        <Animate>
+          <use-anim>0</use-anim>
+        </Animate>
+        <ImgStorage>
+          <use-img-storage>0</use-img-storage>
+        </ImgStorage>
+        <FontStorage>
+          <use-font-storage>0</use-font-storage>
+        </FontStorage>
+        <Attribute/>
+        <Style>
+          <Part value="0" name="Main">
+            <State value="0" name="Default">
+              <bg-opa>0</bg-opa>
+              <radius>0</radius>
+              <pad-left>0</pad-left>
+              <pad-right>0</pad-right>
+              <pad-top>0</pad-top>
+              <pad-bottom>0</pad-bottom>
+              <border-width>0</border-width>
+              <bg-color>#eff8f5</bg-color>
+            </State>
+          </Part>
+        </Style>
+        <Event/>
+        <Children>
+          <Widget index="0" parent-id="1781773155899" is-hidden="0" group-id="-1" type="28" id="1781848789658" name="contItem1">
+            <Normal>
+              <name>contItem1</name>
+              <postion>36,75</postion>
+              <size>350,250</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute/>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <radius>30</radius>
+                  <pad-left>0</pad-left>
+                  <pad-right>0</pad-right>
+                  <pad-top>0</pad-top>
+                  <pad-bottom>0</pad-bottom>
+                  <border-width>0</border-width>
+                  <bg-color>#54211b</bg-color>
+                </State>
+              </Part>
+            </Style>
+            <Event>
+              <Clicked eventId="7" itemIdx="-1">
+                <Object id="1781850345905">
+                  <Attr index="0" ps="-1" id="550">0_0_0</Attr>
+                </Object>
+              </Clicked>
+            </Event>
+            <Children>
+              <Widget index="0" parent-id="1781848789658" is-hidden="0" group-id="-1" type="28" id="1781849067815" name="contImg1">
+                <Normal>
+                  <name>contImg1</name>
+                  <postion>30,30</postion>
+                  <size>100,100</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute/>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <radius>50</radius>
+                      <pad-left>0</pad-left>
+                      <pad-right>0</pad-right>
+                      <pad-top>0</pad-top>
+                      <pad-bottom>0</pad-bottom>
+                      <border-width>0</border-width>
+                      <bg-color>#eff8f5</bg-color>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+                <Children>
+                  <Widget index="0" parent-id="1781849067815" is-hidden="0" group-id="-1" type="5" id="1781849525255" name="image_1">
+                    <Normal>
+                      <name>image_1</name>
+                      <postion>10,10</postion>
+                      <size>80,80</size>
+                      <scrollbar-mode>0</scrollbar-mode>
+                      <flag></flag>
+                    </Normal>
+                    <Animate>
+                      <use-anim>0</use-anim>
+                    </Animate>
+                    <ImgStorage>
+                      <use-img-storage>0</use-img-storage>
+                    </ImgStorage>
+                    <FontStorage>
+                      <use-font-storage>0</use-font-storage>
+                    </FontStorage>
+                    <Attribute>
+                      <src>charging.png</src>
+                      <center-x>50</center-x>
+                      <center-y>50</center-y>
+                      <offset-x>0</offset-x>
+                      <offset-y>0</offset-y>
+                      <rotate>0</rotate>
+                    </Attribute>
+                    <Style/>
+                    <Event/>
+                  </Widget>
+                </Children>
+              </Widget>
+              <Widget index="1" parent-id="1781848789658" is-hidden="0" group-id="-1" type="1" id="1781849988635" name="label_1">
+                <Normal>
+                  <name>label_1</name>
+                  <postion>25,180</postion>
+                  <size>300,50</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <text>EV Charging</text>
+                  <long-mode>0</long-mode>
+                  <select-start>-1</select-start>
+                  <select-end>-1</select-end>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <text-color>#ffffff</text-color>
+                      <text-font-size>36</text-font-size>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+            </Children>
+          </Widget>
+          <Widget index="1" parent-id="1781773155899" is-hidden="0" group-id="-1" type="28" id="1781848916029" name="contItem2">
+            <Normal>
+              <name>contItem2</name>
+              <postion>412,75</postion>
+              <size>350,250</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute/>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <radius>30</radius>
+                  <pad-left>0</pad-left>
+                  <pad-right>0</pad-right>
+                  <pad-top>0</pad-top>
+                  <pad-bottom>0</pad-bottom>
+                  <border-width>0</border-width>
+                  <bg-color>#54211b</bg-color>
+                </State>
+              </Part>
+            </Style>
+            <Event>
+              <Clicked eventId="7" itemIdx="-1">
+                <Object id="1781850351010">
+                  <Attr index="0" ps="-1" id="550">0_0_0</Attr>
+                </Object>
+              </Clicked>
+            </Event>
+            <Children>
+              <Widget index="0" parent-id="1781848916029" is-hidden="0" group-id="-1" type="28" id="1781849761429" name="contImg2">
+                <Normal>
+                  <name>contImg2</name>
+                  <postion>30,30</postion>
+                  <size>100,100</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute/>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <radius>50</radius>
+                      <pad-left>0</pad-left>
+                      <pad-right>0</pad-right>
+                      <pad-top>0</pad-top>
+                      <pad-bottom>0</pad-bottom>
+                      <border-width>0</border-width>
+                      <bg-color>#eff8f5</bg-color>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+                <Children>
+                  <Widget index="0" parent-id="1781849761429" is-hidden="0" group-id="-1" type="5" id="1781849761430" name="image_2">
+                    <Normal>
+                      <name>image_2</name>
+                      <postion>20,20</postion>
+                      <size>60,60</size>
+                      <scrollbar-mode>0</scrollbar-mode>
+                      <flag></flag>
+                    </Normal>
+                    <Animate>
+                      <use-anim>0</use-anim>
+                    </Animate>
+                    <ImgStorage>
+                      <use-img-storage>0</use-img-storage>
+                    </ImgStorage>
+                    <FontStorage>
+                      <use-font-storage>0</use-font-storage>
+                    </FontStorage>
+                    <Attribute>
+                      <src>wifi.png</src>
+                      <center-x>50</center-x>
+                      <center-y>50</center-y>
+                      <offset-x>0</offset-x>
+                      <offset-y>0</offset-y>
+                      <rotate>0</rotate>
+                    </Attribute>
+                    <Style/>
+                    <Event/>
+                  </Widget>
+                </Children>
+              </Widget>
+              <Widget index="1" parent-id="1781848916029" is-hidden="0" group-id="-1" type="1" id="1781850082661" name="label_2">
+                <Normal>
+                  <name>label_2</name>
+                  <postion>25,180</postion>
+                  <size>300,50</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <text>Smart Home</text>
+                  <long-mode>0</long-mode>
+                  <select-start>-1</select-start>
+                  <select-end>-1</select-end>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <text-color>#ffffff</text-color>
+                      <text-font-size>36</text-font-size>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+            </Children>
+          </Widget>
+          <Widget index="2" parent-id="1781773155899" is-hidden="0" group-id="-1" type="28" id="1781848954158" name="contItem3">
+            <Normal>
+              <name>contItem3</name>
+              <postion>802,75</postion>
+              <size>350,250</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute/>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <radius>30</radius>
+                  <pad-left>0</pad-left>
+                  <pad-right>0</pad-right>
+                  <pad-top>0</pad-top>
+                  <pad-bottom>0</pad-bottom>
+                  <border-width>0</border-width>
+                  <bg-color>#54211b</bg-color>
+                </State>
+              </Part>
+            </Style>
+            <Event>
+              <Clicked eventId="7" itemIdx="-1">
+                <Object id="1781850356857">
+                  <Attr index="0" ps="-1" id="550">0_0_0</Attr>
+                </Object>
+              </Clicked>
+            </Event>
+            <Children>
+              <Widget index="0" parent-id="1781848954158" is-hidden="0" group-id="-1" type="28" id="1781849776109" name="contImg3">
+                <Normal>
+                  <name>contImg3</name>
+                  <postion>30,30</postion>
+                  <size>100,100</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute/>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <radius>50</radius>
+                      <pad-left>0</pad-left>
+                      <pad-right>0</pad-right>
+                      <pad-top>0</pad-top>
+                      <pad-bottom>0</pad-bottom>
+                      <border-width>0</border-width>
+                      <bg-color>#eff8f5</bg-color>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+                <Children>
+                  <Widget index="0" parent-id="1781849776109" is-hidden="0" group-id="-1" type="5" id="1781849776115" name="image_3">
+                    <Normal>
+                      <name>image_3</name>
+                      <postion>20,20</postion>
+                      <size>60,60</size>
+                      <scrollbar-mode>0</scrollbar-mode>
+                      <flag></flag>
+                    </Normal>
+                    <Animate>
+                      <use-anim>0</use-anim>
+                    </Animate>
+                    <ImgStorage>
+                      <use-img-storage>0</use-img-storage>
+                    </ImgStorage>
+                    <FontStorage>
+                      <use-font-storage>0</use-font-storage>
+                    </FontStorage>
+                    <Attribute>
+                      <src>brightness.png</src>
+                      <center-x>50</center-x>
+                      <center-y>50</center-y>
+                      <offset-x>0</offset-x>
+                      <offset-y>0</offset-y>
+                      <rotate>0</rotate>
+                    </Attribute>
+                    <Style/>
+                    <Event/>
+                  </Widget>
+                </Children>
+              </Widget>
+              <Widget index="1" parent-id="1781848954158" is-hidden="0" group-id="-1" type="1" id="1781850094484" name="label_3">
+                <Normal>
+                  <name>label_3</name>
+                  <postion>25,180</postion>
+                  <size>300,50</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <text>Smart Meter</text>
+                  <long-mode>0</long-mode>
+                  <select-start>-1</select-start>
+                  <select-end>-1</select-end>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <text-color>#ffffff</text-color>
+                      <text-font-size>36</text-font-size>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+            </Children>
+          </Widget>
+          <Widget index="3" parent-id="1781773155899" is-hidden="0" group-id="-1" type="28" id="1781848958590" name="contItem4">
+            <Normal>
+              <name>contItem4</name>
+              <postion>1178,75</postion>
+              <size>350,250</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute/>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <radius>30</radius>
+                  <pad-left>0</pad-left>
+                  <pad-right>0</pad-right>
+                  <pad-top>0</pad-top>
+                  <pad-bottom>0</pad-bottom>
+                  <border-width>0</border-width>
+                  <bg-color>#54211b</bg-color>
+                </State>
+              </Part>
+            </Style>
+            <Event/>
+            <Children>
+              <Widget index="0" parent-id="1781848958590" is-hidden="0" group-id="-1" type="28" id="1781849779612" name="contImg4">
+                <Normal>
+                  <name>contImg4</name>
+                  <postion>30,30</postion>
+                  <size>100,100</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute/>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <radius>50</radius>
+                      <pad-left>0</pad-left>
+                      <pad-right>0</pad-right>
+                      <pad-top>0</pad-top>
+                      <pad-bottom>0</pad-bottom>
+                      <border-width>0</border-width>
+                      <bg-color>#eff8f5</bg-color>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+                <Children>
+                  <Widget index="0" parent-id="1781849779612" is-hidden="0" group-id="-1" type="5" id="1781849779613" name="image_4">
+                    <Normal>
+                      <name>image_4</name>
+                      <postion>10,10</postion>
+                      <size>80,80</size>
+                      <scrollbar-mode>0</scrollbar-mode>
+                      <flag></flag>
+                    </Normal>
+                    <Animate>
+                      <use-anim>0</use-anim>
+                    </Animate>
+                    <ImgStorage>
+                      <use-img-storage>0</use-img-storage>
+                    </ImgStorage>
+                    <FontStorage>
+                      <use-font-storage>0</use-font-storage>
+                    </FontStorage>
+                    <Attribute>
+                      <src>charging.png</src>
+                      <center-x>50</center-x>
+                      <center-y>50</center-y>
+                      <offset-x>0</offset-x>
+                      <offset-y>0</offset-y>
+                      <rotate>0</rotate>
+                    </Attribute>
+                    <Style/>
+                    <Event/>
+                  </Widget>
+                </Children>
+              </Widget>
+              <Widget index="1" parent-id="1781848958590" is-hidden="0" group-id="-1" type="1" id="1781850099460" name="label_4">
+                <Normal>
+                  <name>label_4</name>
+                  <postion>25,180</postion>
+                  <size>300,50</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <text>Thermostat</text>
+                  <long-mode>0</long-mode>
+                  <select-start>-1</select-start>
+                  <select-end>-1</select-end>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <text-color>#ffffff</text-color>
+                      <text-font-size>36</text-font-size>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+            </Children>
+          </Widget>
+          <Widget index="4" parent-id="1781773155899" is-hidden="0" group-id="-1" type="28" id="1781848961517" name="contItem5">
+            <Normal>
+              <name>contItem5</name>
+              <postion>1558,75</postion>
+              <size>350,250</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute/>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <radius>30</radius>
+                  <pad-left>0</pad-left>
+                  <pad-right>0</pad-right>
+                  <pad-top>0</pad-top>
+                  <pad-bottom>0</pad-bottom>
+                  <border-width>0</border-width>
+                  <bg-color>#54211b</bg-color>
+                </State>
+              </Part>
+            </Style>
+            <Event>
+              <Clicked eventId="7" itemIdx="-1">
+                <Object id="1781850382508">
+                  <Attr index="0" ps="-1" id="550">0_0_0</Attr>
+                </Object>
+              </Clicked>
+            </Event>
+            <Children>
+              <Widget index="0" parent-id="1781848961517" is-hidden="0" group-id="-1" type="28" id="1781849791853" name="contImg5">
+                <Normal>
+                  <name>contImg5</name>
+                  <postion>30,30</postion>
+                  <size>100,100</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute/>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <radius>50</radius>
+                      <pad-left>0</pad-left>
+                      <pad-right>0</pad-right>
+                      <pad-top>0</pad-top>
+                      <pad-bottom>0</pad-bottom>
+                      <border-width>0</border-width>
+                      <bg-color>#eff8f5</bg-color>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+                <Children>
+                  <Widget index="0" parent-id="1781849791853" is-hidden="0" group-id="-1" type="5" id="1781849791858" name="image_5">
+                    <Normal>
+                      <name>image_5</name>
+                      <postion>20,20</postion>
+                      <size>60,60</size>
+                      <scrollbar-mode>0</scrollbar-mode>
+                      <flag></flag>
+                    </Normal>
+                    <Animate>
+                      <use-anim>0</use-anim>
+                    </Animate>
+                    <ImgStorage>
+                      <use-img-storage>0</use-img-storage>
+                    </ImgStorage>
+                    <FontStorage>
+                      <use-font-storage>0</use-font-storage>
+                    </FontStorage>
+                    <Attribute>
+                      <src>about.png</src>
+                      <center-x>50</center-x>
+                      <center-y>50</center-y>
+                      <offset-x>0</offset-x>
+                      <offset-y>0</offset-y>
+                      <rotate>0</rotate>
+                    </Attribute>
+                    <Style/>
+                    <Event/>
+                  </Widget>
+                </Children>
+              </Widget>
+              <Widget index="1" parent-id="1781848961517" is-hidden="0" group-id="-1" type="1" id="1781850106164" name="label_5">
+                <Normal>
+                  <name>label_5</name>
+                  <postion>25,180</postion>
+                  <size>300,50</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <text>About</text>
+                  <long-mode>0</long-mode>
+                  <select-start>-1</select-start>
+                  <select-end>-1</select-end>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <text-color>#ffffff</text-color>
+                      <text-font-size>36</text-font-size>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+            </Children>
+          </Widget>
+        </Children>
+      </Widget>
+      <Widget index="2" is-hidden="0" type="28" id="1781852487788" name="container_13">
+        <Normal>
+          <name>container_13</name>
+          <postion>1000,200</postion>
+          <size>800,300</size>
+          <scrollbar-mode>0</scrollbar-mode>
+          <flag></flag>
+        </Normal>
+        <Animate>
+          <use-anim>0</use-anim>
+        </Animate>
+        <ImgStorage>
+          <use-img-storage>0</use-img-storage>
+        </ImgStorage>
+        <FontStorage>
+          <use-font-storage>0</use-font-storage>
+        </FontStorage>
+        <Attribute/>
+        <Style>
+          <Part value="0" name="Main">
+            <State value="0" name="Default">
+              <bg-opa>0</bg-opa>
+              <radius>0</radius>
+              <pad-left>0</pad-left>
+              <pad-right>0</pad-right>
+              <pad-top>0</pad-top>
+              <pad-bottom>0</pad-bottom>
+              <border-width>0</border-width>
+              <bg-color>#eff8f5</bg-color>
+            </State>
+          </Part>
+        </Style>
+        <Event/>
+        <Children>
+          <Widget index="0" parent-id="1781852487788" is-hidden="0" group-id="-1" type="5" id="1781852289162" name="image_7">
+            <Normal>
+              <name>image_7</name>
+              <postion>30,0</postion>
+              <size>200,200</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute>
+              <src>Cloudy.png</src>
+              <center-x>50</center-x>
+              <center-y>50</center-y>
+              <offset-x>0</offset-x>
+              <offset-y>0</offset-y>
+              <rotate>0</rotate>
+            </Attribute>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <img-recolor>#676767</img-recolor>
+                </State>
+              </Part>
+            </Style>
+            <Event/>
+          </Widget>
+          <Widget index="1" parent-id="1781852487788" is-hidden="0" group-id="-1" type="1" id="1781852432123" name="label_6">
+            <Normal>
+              <name>label_6</name>
+              <postion>30,190</postion>
+              <size>200,50</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute>
+              <text>Cloudy</text>
+              <long-mode>0</long-mode>
+              <select-start>-1</select-start>
+              <select-end>-1</select-end>
+            </Attribute>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <text-color>#e12717</text-color>
+                  <text-font-size>40</text-font-size>
+                </State>
+              </Part>
+            </Style>
+            <Event/>
+          </Widget>
+          <Widget index="2" parent-id="1781852487788" is-hidden="0" group-id="-1" type="1" id="1781852562908" name="label_7">
+            <Normal>
+              <name>label_7</name>
+              <postion>30,240</postion>
+              <size>250,40</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute>
+              <text>H:19°   L:10°</text>
+              <long-mode>0</long-mode>
+              <select-start>-1</select-start>
+              <select-end>-1</select-end>
+            </Attribute>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <text-color>#ffffff</text-color>
+                  <text-font-size>40</text-font-size>
+                </State>
+              </Part>
+            </Style>
+            <Event/>
+          </Widget>
+          <Widget index="3" parent-id="1781852487788" is-hidden="0" group-id="-1" type="1" id="1781852650820" name="label_8">
+            <Normal>
+              <name>label_8</name>
+              <postion>450,0</postion>
+              <size>300,200</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute>
+              <text>16°</text>
+              <long-mode>0</long-mode>
+              <select-start>-1</select-start>
+              <select-end>-1</select-end>
+            </Attribute>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <text-align>2</text-align>
+                  <text-color>#ffffff</text-color>
+                  <text-font-size>180</text-font-size>
+                </State>
+              </Part>
+            </Style>
+            <Event/>
+          </Widget>
+          <Widget index="4" parent-id="1781852487788" is-hidden="0" group-id="-1" type="1" id="1781852698460" name="label_9">
+            <Normal>
+              <name>label_9</name>
+              <postion>500,230</postion>
+              <size>250,60</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute>
+              <text>Outdoor</text>
+              <long-mode>0</long-mode>
+              <select-start>-1</select-start>
+              <select-end>-1</select-end>
+            </Attribute>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <text-color>#ffffff</text-color>
+                  <text-font-size>50</text-font-size>
+                </State>
+              </Part>
+            </Style>
+            <Event/>
+          </Widget>
+        </Children>
+      </Widget>
+    </Widgets>
+  </Screen>
+  <Screen index="1" is-default="0" id="1781850345905" name="scrCharge">
+    <Normal>
+      <name>scrCharge</name>
+      <scrollbar-mode>0</scrollbar-mode>
+      <flag></flag>
+    </Normal>
+    <Animate>
+      <use-anim>0</use-anim>
+    </Animate>
+    <ImgStorage>
+      <use-img-storage>0</use-img-storage>
+    </ImgStorage>
+    <FontStorage>
+      <use-font-storage>0</use-font-storage>
+    </FontStorage>
+    <Attribute/>
+    <Style>
+      <Part value="0" name="Main">
+        <State value="0" name="Default">
+          <bg-color>#26190f</bg-color>
+        </State>
+      </Part>
+    </Style>
+    <Event/>
+    <Widgets>
+      <Widget index="0" is-hidden="0" type="5" id="1781850510238" name="back">
+        <Normal>
+          <name>back</name>
+          <postion>50,50</postion>
+          <size>100,100</size>
+          <scrollbar-mode>0</scrollbar-mode>
+          <flag>2_1</flag>
+        </Normal>
+        <Animate>
+          <use-anim>0</use-anim>
+        </Animate>
+        <ImgStorage>
+          <use-img-storage>0</use-img-storage>
+        </ImgStorage>
+        <FontStorage>
+          <use-font-storage>0</use-font-storage>
+        </FontStorage>
+        <Attribute>
+          <src>back1.png</src>
+          <center-x>50</center-x>
+          <center-y>50</center-y>
+          <offset-x>0</offset-x>
+          <offset-y>0</offset-y>
+          <rotate>0</rotate>
+        </Attribute>
+        <Style>
+          <Part value="0" name="Main">
+            <State value="0" name="Default">
+              <img-recolor>#ffffff</img-recolor>
+            </State>
+          </Part>
+        </Style>
+        <Event>
+          <Clicked eventId="7" itemIdx="-1">
+            <Object id="1781764894376">
+              <Attr index="0" ps="-1" id="550">0_0_0</Attr>
+            </Object>
+          </Clicked>
+        </Event>
+      </Widget>
+      <Widget index="1" is-hidden="0" type="28" id="1781853008268" name="container_14">
+        <Normal>
+          <name>container_14</name>
+          <postion>50,550</postion>
+          <size>500,600</size>
+          <scrollbar-mode>0</scrollbar-mode>
+          <flag></flag>
+        </Normal>
+        <Animate>
+          <use-anim>0</use-anim>
+        </Animate>
+        <ImgStorage>
+          <use-img-storage>0</use-img-storage>
+        </ImgStorage>
+        <FontStorage>
+          <use-font-storage>0</use-font-storage>
+        </FontStorage>
+        <Attribute/>
+        <Style>
+          <Part value="0" name="Main">
+            <State value="0" name="Default">
+              <radius>20</radius>
+              <pad-left>0</pad-left>
+              <pad-right>0</pad-right>
+              <pad-top>0</pad-top>
+              <pad-bottom>0</pad-bottom>
+              <border-width>0</border-width>
+              <bg-color>#572519</bg-color>
+            </State>
+          </Part>
+        </Style>
+        <Event/>
+        <Children>
+          <Widget index="0" parent-id="1781853008268" is-hidden="0" group-id="-1" type="1" id="1781853239636" name="label_11">
+            <Normal>
+              <name>label_11</name>
+              <postion>30,30</postion>
+              <size>400,60</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute>
+              <text>Gas Savings</text>
+              <long-mode>0</long-mode>
+              <select-start>-1</select-start>
+              <select-end>-1</select-end>
+            </Attribute>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <text-color>#ffffff</text-color>
+                  <text-font-size>50</text-font-size>
+                </State>
+              </Part>
+            </Style>
+            <Event/>
+          </Widget>
+          <Widget index="1" parent-id="1781853008268" is-hidden="0" group-id="-1" type="1" id="1781853337996" name="label_12">
+            <Normal>
+              <name>label_12</name>
+              <postion>30,100</postion>
+              <size>400,40</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute>
+              <text>Estimated values</text>
+              <long-mode>0</long-mode>
+              <select-start>-1</select-start>
+              <select-end>-1</select-end>
+            </Attribute>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <text-color>#886b64</text-color>
+                  <text-font-size>30</text-font-size>
+                </State>
+              </Part>
+            </Style>
+            <Event/>
+          </Widget>
+          <Widget index="2" parent-id="1781853008268" is-hidden="0" group-id="-1" type="1" id="1781853584644" name="label_money">
+            <Normal>
+              <name>label_money</name>
+              <postion>30,170</postion>
+              <size>400,100</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute>
+              <text>$250</text>
+              <long-mode>0</long-mode>
+              <select-start>-1</select-start>
+              <select-end>-1</select-end>
+            </Attribute>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <text-color>#ffffff</text-color>
+                  <text-font-size>80</text-font-size>
+                </State>
+              </Part>
+            </Style>
+            <Event/>
+          </Widget>
+          <Widget index="3" parent-id="1781853008268" is-hidden="0" group-id="-1" type="1" id="1781853623627" name="label_16">
+            <Normal>
+              <name>label_16</name>
+              <postion>30,280</postion>
+              <size>200,40</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute>
+              <text>Saved</text>
+              <long-mode>0</long-mode>
+              <select-start>-1</select-start>
+              <select-end>-1</select-end>
+            </Attribute>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <text-color>#ffffff</text-color>
+                  <text-font-size>30</text-font-size>
+                </State>
+              </Part>
+            </Style>
+            <Event/>
+          </Widget>
+        </Children>
+      </Widget>
+      <Widget index="2" is-hidden="0" type="28" id="1781853024911" name="container_15">
+        <Normal>
+          <name>container_15</name>
+          <postion>600,550</postion>
+          <size>500,600</size>
+          <scrollbar-mode>0</scrollbar-mode>
+          <flag></flag>
+        </Normal>
+        <Animate>
+          <use-anim>0</use-anim>
+        </Animate>
+        <ImgStorage>
+          <use-img-storage>0</use-img-storage>
+        </ImgStorage>
+        <FontStorage>
+          <use-font-storage>0</use-font-storage>
+        </FontStorage>
+        <Attribute/>
+        <Style>
+          <Part value="0" name="Main">
+            <State value="0" name="Default">
+              <radius>20</radius>
+              <pad-left>0</pad-left>
+              <pad-right>0</pad-right>
+              <pad-top>0</pad-top>
+              <pad-bottom>0</pad-bottom>
+              <border-width>0</border-width>
+              <bg-color>#6a443a</bg-color>
+            </State>
+          </Part>
+        </Style>
+        <Event/>
+        <Children>
+          <Widget index="0" parent-id="1781853024911" is-hidden="0" group-id="-1" type="1" id="1781853541939" name="label_13">
+            <Normal>
+              <name>label_13</name>
+              <postion>30,30</postion>
+              <size>400,60</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute>
+              <text>Last 14 days</text>
+              <long-mode>0</long-mode>
+              <select-start>-1</select-start>
+              <select-end>-1</select-end>
+            </Attribute>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <text-color>#ffffff</text-color>
+                  <text-font-size>50</text-font-size>
+                </State>
+              </Part>
+            </Style>
+            <Event/>
+          </Widget>
+          <Widget index="1" parent-id="1781853024911" is-hidden="0" group-id="-1" type="29" id="1781855598797" name="chart_1">
+            <Normal>
+              <name>chart_1</name>
+              <postion>30,150</postion>
+              <size>370,220</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute>
+              <datas>
+                <data>
+                  <color>#ffffff</color>
+                  <list>46, 28, 75, 91, 45, 57, 76, 42, 31, 95</list>
+                </data>
+              </datas>
+              <type>2</type>
+              <y-range>0, 100</y-range>
+            </Attribute>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <bg-opa>0</bg-opa>
+                  <line-width>0</line-width>
+                  <border-width>0</border-width>
+                </State>
+              </Part>
+            </Style>
+            <Event/>
+          </Widget>
+        </Children>
+      </Widget>
+      <Widget index="3" is-hidden="0" type="1" id="1781853121142" name="label_10">
+        <Normal>
+          <name>label_10</name>
+          <postion>50,200</postion>
+          <size>580,100</size>
+          <scrollbar-mode>0</scrollbar-mode>
+          <flag></flag>
+        </Normal>
+        <Animate>
+          <use-anim>0</use-anim>
+        </Animate>
+        <ImgStorage>
+          <use-img-storage>0</use-img-storage>
+        </ImgStorage>
+        <FontStorage>
+          <use-font-storage>0</use-font-storage>
+        </FontStorage>
+        <Attribute>
+          <text>EV Charging</text>
+          <long-mode>0</long-mode>
+          <select-start>-1</select-start>
+          <select-end>-1</select-end>
+        </Attribute>
+        <Style>
+          <Part value="0" name="Main">
+            <State value="0" name="Default">
+              <text-color>#ffffff</text-color>
+              <text-font-size>80</text-font-size>
+            </State>
+          </Part>
+        </Style>
+        <Event/>
+      </Widget>
+      <Widget index="4" is-hidden="0" type="28" id="1781853182131" name="cont_charge">
+        <Normal>
+          <name>cont_charge</name>
+          <postion>1150,250</postion>
+          <size>720,900</size>
+          <scrollbar-mode>0</scrollbar-mode>
+          <flag></flag>
+        </Normal>
+        <Animate>
+          <use-anim>0</use-anim>
+        </Animate>
+        <ImgStorage>
+          <use-img-storage>0</use-img-storage>
+        </ImgStorage>
+        <FontStorage>
+          <use-font-storage>0</use-font-storage>
+        </FontStorage>
+        <Attribute/>
+        <Style>
+          <Part value="0" name="Main">
+            <State value="0" name="Default">
+              <radius>20</radius>
+              <pad-left>0</pad-left>
+              <pad-right>0</pad-right>
+              <pad-top>0</pad-top>
+              <pad-bottom>0</pad-bottom>
+              <border-width>0</border-width>
+              <bg-color>#9364f0</bg-color>
+            </State>
+          </Part>
+        </Style>
+        <Event/>
+        <Children>
+          <Widget index="0" parent-id="1781853182131" is-hidden="0" group-id="-1" type="12" id="1781853687534" name="arc_charge">
+            <Normal>
+              <name>arc_charge</name>
+              <postion>160,150</postion>
+              <size>400,400</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute>
+              <mode>0</mode>
+              <min-value>0</min-value>
+              <max-value>100</max-value>
+              <value>20</value>
+              <angle-start>0</angle-start>
+              <angle-end>72</angle-end>
+              <bg-angle-start>0</bg-angle-start>
+              <bg-angle-end>360</bg-angle-end>
+              <rotate>270</rotate>
+              <change-rate>720</change-rate>
+            </Attribute>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <arc-opa>111</arc-opa>
+                  <arc-width>20</arc-width>
+                </State>
+              </Part>
+            </Style>
+            <Event/>
+          </Widget>
+          <Widget index="1" parent-id="1781853182131" is-hidden="0" group-id="-1" type="1" id="1781853766347" name="label_percent">
+            <Normal>
+              <name>label_percent</name>
+              <postion>210,250</postion>
+              <size>300,110</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute>
+              <text>0%</text>
+              <long-mode>0</long-mode>
+              <select-start>-1</select-start>
+              <select-end>-1</select-end>
+            </Attribute>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <text-align>2</text-align>
+                  <text-color>#ffffff</text-color>
+                  <text-font-size>100</text-font-size>
+                </State>
+              </Part>
+            </Style>
+            <Event/>
+          </Widget>
+          <Widget index="2" parent-id="1781853182131" is-hidden="0" group-id="-1" type="2" id="1781853841440" name="btn_charge">
+            <Normal>
+              <name>btn_charge</name>
+              <postion>220,375</postion>
+              <size>280,80</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute>
+              <text>Start Charging</text>
+            </Attribute>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <bg-opa>55</bg-opa>
+                  <radius>40</radius>
+                  <shadow-width>0</shadow-width>
+                  <bg-color>#ffffff</bg-color>
+                  <text-font-size>30</text-font-size>
+                </State>
+              </Part>
+            </Style>
+            <Event/>
+          </Widget>
+          <Widget index="3" parent-id="1781853182131" is-hidden="0" group-id="-1" type="1" id="1781854298226" name="label_18">
+            <Normal>
+              <name>label_18</name>
+              <postion>30,30</postion>
+              <size>400,60</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute>
+              <text>Charging</text>
+              <long-mode>0</long-mode>
+              <select-start>-1</select-start>
+              <select-end>-1</select-end>
+            </Attribute>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <text-color>#ffffff</text-color>
+                  <text-font-size>50</text-font-size>
+                </State>
+              </Part>
+            </Style>
+            <Event/>
+          </Widget>
+          <Widget index="4" parent-id="1781853182131" is-hidden="0" group-id="-1" type="28" id="1781854550773" name="container_17">
+            <Normal>
+              <name>container_17</name>
+              <postion>30,580</postion>
+              <size>200,280</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute/>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <bg-opa>64</bg-opa>
+                  <radius>20</radius>
+                  <pad-left>0</pad-left>
+                  <pad-right>0</pad-right>
+                  <pad-top>0</pad-top>
+                  <pad-bottom>0</pad-bottom>
+                  <border-width>0</border-width>
+                  <bg-color>#eff8f5</bg-color>
+                </State>
+              </Part>
+            </Style>
+            <Event/>
+            <Children>
+              <Widget index="0" parent-id="1781854550773" is-hidden="0" group-id="-1" type="5" id="1781854973613" name="image_8">
+                <Normal>
+                  <name>image_8</name>
+                  <postion>20,20</postion>
+                  <size>80,80</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <src>time.png</src>
+                  <center-x>50</center-x>
+                  <center-y>50</center-y>
+                  <offset-x>0</offset-x>
+                  <offset-y>0</offset-y>
+                  <rotate>0</rotate>
+                </Attribute>
+                <Style/>
+                <Event/>
+              </Widget>
+              <Widget index="1" parent-id="1781854550773" is-hidden="0" group-id="-1" type="1" id="1781855129028" name="label_19">
+                <Normal>
+                  <name>label_19</name>
+                  <postion>20,110</postion>
+                  <size>170,80</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <text>Time to full charge</text>
+                  <long-mode>0</long-mode>
+                  <select-start>-1</select-start>
+                  <select-end>-1</select-end>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <text-color>#ffffff</text-color>
+                      <text-font-size>30</text-font-size>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+              <Widget index="2" parent-id="1781854550773" is-hidden="0" group-id="-1" type="1" id="1781855172955" name="label_time">
+                <Normal>
+                  <name>label_time</name>
+                  <postion>20,200</postion>
+                  <size>100,70</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <text>7.2</text>
+                  <long-mode>0</long-mode>
+                  <select-start>-1</select-start>
+                  <select-end>-1</select-end>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <text-color>#ffffff</text-color>
+                      <text-font-size>60</text-font-size>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+              <Widget index="3" parent-id="1781854550773" is-hidden="0" group-id="-1" type="1" id="1781855226435" name="label_21">
+                <Normal>
+                  <name>label_21</name>
+                  <postion>120,230</postion>
+                  <size>20,40</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <text>h</text>
+                  <long-mode>0</long-mode>
+                  <select-start>-1</select-start>
+                  <select-end>-1</select-end>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <text-color>#d2b2e9</text-color>
+                      <text-font-size>30</text-font-size>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+            </Children>
+          </Widget>
+          <Widget index="5" parent-id="1781853182131" is-hidden="0" group-id="-1" type="28" id="1781854561643" name="container_18">
+            <Normal>
+              <name>container_18</name>
+              <postion>260,580</postion>
+              <size>200,280</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute/>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <bg-opa>66</bg-opa>
+                  <radius>20</radius>
+                  <pad-left>0</pad-left>
+                  <pad-right>0</pad-right>
+                  <pad-top>0</pad-top>
+                  <pad-bottom>0</pad-bottom>
+                  <border-width>0</border-width>
+                  <bg-color>#eff8f5</bg-color>
+                </State>
+              </Part>
+            </Style>
+            <Event/>
+            <Children>
+              <Widget index="0" parent-id="1781854561643" is-hidden="0" group-id="-1" type="1" id="1781855418764" name="label_23">
+                <Normal>
+                  <name>label_23</name>
+                  <postion>20,110</postion>
+                  <size>170,80</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <text>Energy consumed</text>
+                  <long-mode>0</long-mode>
+                  <select-start>-1</select-start>
+                  <select-end>-1</select-end>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <text-color>#ffffff</text-color>
+                      <text-font-size>30</text-font-size>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+              <Widget index="1" parent-id="1781854561643" is-hidden="0" group-id="-1" type="1" id="1781855434162" name="label_consume">
+                <Normal>
+                  <name>label_consume</name>
+                  <postion>20,200</postion>
+                  <size>100,70</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <text>0.0</text>
+                  <long-mode>0</long-mode>
+                  <select-start>-1</select-start>
+                  <select-end>-1</select-end>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <text-color>#ffffff</text-color>
+                      <text-font-size>60</text-font-size>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+              <Widget index="2" parent-id="1781854561643" is-hidden="0" group-id="-1" type="1" id="1781855459115" name="label_26">
+                <Normal>
+                  <name>label_26</name>
+                  <postion>120,230</postion>
+                  <size>68,40</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <text>kW</text>
+                  <long-mode>0</long-mode>
+                  <select-start>-1</select-start>
+                  <select-end>-1</select-end>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <text-color>#d2b2e9</text-color>
+                      <text-font-size>30</text-font-size>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+              <Widget index="3" parent-id="1781854561643" is-hidden="0" group-id="-1" type="5" id="1781856027311" name="image_1">
+                <Normal>
+                  <name>image_1</name>
+                  <postion>20,20</postion>
+                  <size>80,80</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <src>consumption.png</src>
+                  <center-x>50</center-x>
+                  <center-y>50</center-y>
+                  <offset-x>0</offset-x>
+                  <offset-y>0</offset-y>
+                  <rotate>0</rotate>
+                </Attribute>
+                <Style/>
+                <Event/>
+              </Widget>
+            </Children>
+          </Widget>
+          <Widget index="6" parent-id="1781853182131" is-hidden="0" group-id="-1" type="28" id="1781854616028" name="container_19">
+            <Normal>
+              <name>container_19</name>
+              <postion>490,580</postion>
+              <size>200,280</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute/>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <bg-opa>64</bg-opa>
+                  <radius>20</radius>
+                  <pad-left>0</pad-left>
+                  <pad-right>0</pad-right>
+                  <pad-top>0</pad-top>
+                  <pad-bottom>0</pad-bottom>
+                  <border-width>0</border-width>
+                  <bg-color>#eff8f5</bg-color>
+                </State>
+              </Part>
+            </Style>
+            <Event/>
+            <Children>
+              <Widget index="0" parent-id="1781854616028" is-hidden="0" group-id="-1" type="5" id="1781854999127" name="image_9">
+                <Normal>
+                  <name>image_9</name>
+                  <postion>20,20</postion>
+                  <size>80,80</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <src>driving_range.png</src>
+                  <center-x>50</center-x>
+                  <center-y>50</center-y>
+                  <offset-x>0</offset-x>
+                  <offset-y>0</offset-y>
+                  <rotate>0</rotate>
+                </Attribute>
+                <Style/>
+                <Event/>
+              </Widget>
+              <Widget index="1" parent-id="1781854616028" is-hidden="0" group-id="-1" type="1" id="1781855389915" name="label_22">
+                <Normal>
+                  <name>label_22</name>
+                  <postion>20,110</postion>
+                  <size>170,80</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <text>Driving Range</text>
+                  <long-mode>0</long-mode>
+                  <select-start>-1</select-start>
+                  <select-end>-1</select-end>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <text-color>#ffffff</text-color>
+                      <text-font-size>30</text-font-size>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+              <Widget index="2" parent-id="1781854616028" is-hidden="0" group-id="-1" type="1" id="1781855441274" name="label_km">
+                <Normal>
+                  <name>label_km</name>
+                  <postion>20,200</postion>
+                  <size>100,70</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <text>0</text>
+                  <long-mode>0</long-mode>
+                  <select-start>-1</select-start>
+                  <select-end>-1</select-end>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <text-color>#ffffff</text-color>
+                      <text-font-size>60</text-font-size>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+              <Widget index="3" parent-id="1781854616028" is-hidden="0" group-id="-1" type="1" id="1781855468786" name="label_27">
+                <Normal>
+                  <name>label_27</name>
+                  <postion>130,230</postion>
+                  <size>60,40</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <text>km</text>
+                  <long-mode>0</long-mode>
+                  <select-start>-1</select-start>
+                  <select-end>-1</select-end>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <text-color>#d2b2e9</text-color>
+                      <text-font-size>30</text-font-size>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+            </Children>
+          </Widget>
+        </Children>
+      </Widget>
+    </Widgets>
+  </Screen>
+  <Screen index="2" is-default="0" id="1781850351010" name="scrSmartHome">
+    <Normal>
+      <name>scrSmartHome</name>
+      <scrollbar-mode>0</scrollbar-mode>
+      <flag></flag>
+    </Normal>
+    <Animate>
+      <use-anim>0</use-anim>
+    </Animate>
+    <ImgStorage>
+      <use-img-storage>0</use-img-storage>
+    </ImgStorage>
+    <FontStorage>
+      <use-font-storage>0</use-font-storage>
+    </FontStorage>
+    <Attribute/>
+    <Style>
+      <Part value="0" name="Main">
+        <State value="0" name="Default">
+          <bg-color>#26190f</bg-color>
+        </State>
+      </Part>
+    </Style>
+    <Event>
+      <LoadStart eventId="38" itemIdx="-1">
+        <custom-fun>scrSmartHome_custom_load_start</custom-fun>
+      </LoadStart>
+    </Event>
+    <Widgets>
+      <Widget index="0" is-hidden="0" type="5" id="1781856553402" name="back">
+        <Normal>
+          <name>back</name>
+          <postion>50,50</postion>
+          <size>100,100</size>
+          <scrollbar-mode>0</scrollbar-mode>
+          <flag>2_1</flag>
+        </Normal>
+        <Animate>
+          <use-anim>0</use-anim>
+        </Animate>
+        <ImgStorage>
+          <use-img-storage>0</use-img-storage>
+        </ImgStorage>
+        <FontStorage>
+          <use-font-storage>0</use-font-storage>
+        </FontStorage>
+        <Attribute>
+          <src>back1.png</src>
+          <center-x>50</center-x>
+          <center-y>50</center-y>
+          <offset-x>0</offset-x>
+          <offset-y>0</offset-y>
+          <rotate>0</rotate>
+        </Attribute>
+        <Style>
+          <Part value="0" name="Main">
+            <State value="0" name="Default">
+              <img-recolor>#ffffff</img-recolor>
+            </State>
+          </Part>
+        </Style>
+        <Event>
+          <Clicked eventId="7" itemIdx="-1">
+            <Object id="1781764894376">
+              <Attr index="0" ps="-1" id="550">0_0_0</Attr>
+            </Object>
+          </Clicked>
+        </Event>
+      </Widget>
+      <Widget index="1" is-hidden="0" type="1" id="1781857081922" name="title">
+        <Normal>
+          <name>title</name>
+          <postion>50,200</postion>
+          <size>580,100</size>
+          <scrollbar-mode>0</scrollbar-mode>
+          <flag></flag>
+        </Normal>
+        <Animate>
+          <use-anim>0</use-anim>
+        </Animate>
+        <ImgStorage>
+          <use-img-storage>0</use-img-storage>
+        </ImgStorage>
+        <FontStorage>
+          <use-font-storage>0</use-font-storage>
+        </FontStorage>
+        <Attribute>
+          <text>Smart Home</text>
+          <long-mode>0</long-mode>
+          <select-start>-1</select-start>
+          <select-end>-1</select-end>
+        </Attribute>
+        <Style>
+          <Part value="0" name="Main">
+            <State value="0" name="Default">
+              <text-color>#ffffff</text-color>
+              <text-font-size>80</text-font-size>
+            </State>
+          </Part>
+        </Style>
+        <Event/>
+      </Widget>
+      <Widget index="2" is-hidden="0" type="28" id="1781857125277" name="cont_main">
+        <Normal>
+          <name>cont_main</name>
+          <postion>0,200</postion>
+          <size>1920,1000</size>
+          <scrollbar-mode>0</scrollbar-mode>
+          <flag></flag>
+        </Normal>
+        <Animate>
+          <use-anim>0</use-anim>
+        </Animate>
+        <ImgStorage>
+          <use-img-storage>0</use-img-storage>
+        </ImgStorage>
+        <FontStorage>
+          <use-font-storage>0</use-font-storage>
+        </FontStorage>
+        <Attribute/>
+        <Style>
+          <Part value="0" name="Main">
+            <State value="0" name="Default">
+              <radius>0</radius>
+              <bg-opa>0</bg-opa>
+              <pad-left>0</pad-left>
+              <pad-right>0</pad-right>
+              <pad-top>0</pad-top>
+              <pad-bottom>0</pad-bottom>
+              <border-width>0</border-width>
+              <bg-color>#eff8f5</bg-color>
+            </State>
+          </Part>
+        </Style>
+        <Event/>
+        <Children>
+          <Widget index="0" parent-id="1781857125277" is-hidden="0" group-id="-1" type="28" id="1781857177942" name="cont_1">
+            <Normal>
+              <name>cont_1</name>
+              <postion>50,400</postion>
+              <size>500,500</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute/>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <radius>30</radius>
+                  <pad-left>0</pad-left>
+                  <pad-right>0</pad-right>
+                  <pad-top>0</pad-top>
+                  <pad-bottom>0</pad-bottom>
+                  <border-width>0</border-width>
+                  <bg-grad-color>#7d9448</bg-grad-color>
+                  <bg-grad-dir>2</bg-grad-dir>
+                  <bg-color>#20d6b5</bg-color>
+                </State>
+              </Part>
+            </Style>
+            <Event/>
+            <Children>
+              <Widget index="0" parent-id="1781857177942" is-hidden="0" group-id="-1" type="1" id="1781858783561" name="label_2">
+                <Normal>
+                  <name>label_2</name>
+                  <postion>30,30</postion>
+                  <size>450,60</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <text>Climate Control</text>
+                  <long-mode>0</long-mode>
+                  <select-start>-1</select-start>
+                  <select-end>-1</select-end>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <text-color>#ffffff</text-color>
+                      <text-font-size>50</text-font-size>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+              <Widget index="1" parent-id="1781857177942" is-hidden="0" group-id="-1" type="28" id="1781858909582" name="container_7">
+                <Normal>
+                  <name>container_7</name>
+                  <postion>50,150</postion>
+                  <size>400,160</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute/>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <bg-opa>73</bg-opa>
+                      <radius>80</radius>
+                      <pad-left>0</pad-left>
+                      <pad-right>0</pad-right>
+                      <pad-top>0</pad-top>
+                      <pad-bottom>0</pad-bottom>
+                      <border-width>0</border-width>
+                      <bg-color>#eff8f5</bg-color>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+                <Children>
+                  <Widget index="0" parent-id="1781858909582" is-hidden="0" group-id="-1" type="1" id="1781858815617" name="label_3">
+                    <Normal>
+                      <name>label_3</name>
+                      <postion>50,25</postion>
+                      <size>300,110</size>
+                      <scrollbar-mode>0</scrollbar-mode>
+                      <flag></flag>
+                    </Normal>
+                    <Animate>
+                      <use-anim>0</use-anim>
+                    </Animate>
+                    <ImgStorage>
+                      <use-img-storage>0</use-img-storage>
+                    </ImgStorage>
+                    <FontStorage>
+                      <use-font-storage>0</use-font-storage>
+                    </FontStorage>
+                    <Attribute>
+                      <text>22.5°</text>
+                      <long-mode>0</long-mode>
+                      <select-start>-1</select-start>
+                      <select-end>-1</select-end>
+                    </Attribute>
+                    <Style>
+                      <Part value="0" name="Main">
+                        <State value="0" name="Default">
+                          <text-align>2</text-align>
+                          <text-color>#ffffff</text-color>
+                          <text-font-size>100</text-font-size>
+                        </State>
+                      </Part>
+                    </Style>
+                    <Event/>
+                  </Widget>
+                </Children>
+              </Widget>
+              <Widget index="2" parent-id="1781857177942" is-hidden="0" group-id="-1" type="1" id="1781859410706" name="label_10">
+                <Normal>
+                  <name>label_10</name>
+                  <postion>150,350</postion>
+                  <size>200,70</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <text>16°</text>
+                  <long-mode>0</long-mode>
+                  <select-start>-1</select-start>
+                  <select-end>-1</select-end>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <text-align>2</text-align>
+                      <text-color>#ffffff</text-color>
+                      <text-font-size>60</text-font-size>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+              <Widget index="3" parent-id="1781857177942" is-hidden="0" group-id="-1" type="1" id="1781859419265" name="label_11">
+                <Normal>
+                  <name>label_11</name>
+                  <postion>100,430</postion>
+                  <size>300,60</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <text>Outdoor</text>
+                  <long-mode>0</long-mode>
+                  <select-start>-1</select-start>
+                  <select-end>-1</select-end>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <text-align>2</text-align>
+                      <text-color>#ffffff</text-color>
+                      <text-font-size>40</text-font-size>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+            </Children>
+          </Widget>
+          <Widget index="1" parent-id="1781857125277" is-hidden="0" group-id="-1" type="28" id="1781857334178" name="cont_2">
+            <Normal>
+              <name>cont_2</name>
+              <postion>600,400</postion>
+              <size>500,500</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute/>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <radius>30</radius>
+                  <pad-left>0</pad-left>
+                  <pad-right>0</pad-right>
+                  <pad-top>0</pad-top>
+                  <pad-bottom>0</pad-bottom>
+                  <border-width>0</border-width>
+                  <bg-grad-color>#7d9448</bg-grad-color>
+                  <bg-grad-dir>1</bg-grad-dir>
+                  <bg-color>#20d684</bg-color>
+                </State>
+              </Part>
+            </Style>
+            <Event/>
+            <Children>
+              <Widget index="0" parent-id="1781857334178" is-hidden="0" group-id="-1" type="1" id="1781859284083" name="label_6">
+                <Normal>
+                  <name>label_6</name>
+                  <postion>30,30</postion>
+                  <size>300,60</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <text>Charging</text>
+                  <long-mode>0</long-mode>
+                  <select-start>-1</select-start>
+                  <select-end>-1</select-end>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <text-color>#ffffff</text-color>
+                      <text-font-size>50</text-font-size>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+              <Widget index="1" parent-id="1781857334178" is-hidden="0" group-id="-1" type="12" id="1781859311587" name="arc_charge">
+                <Normal>
+                  <name>arc_charge</name>
+                  <postion>100,120</postion>
+                  <size>300,300</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <mode>0</mode>
+                  <min-value>0</min-value>
+                  <max-value>100</max-value>
+                  <value>20</value>
+                  <angle-start>0</angle-start>
+                  <angle-end>72</angle-end>
+                  <bg-angle-start>0</bg-angle-start>
+                  <bg-angle-end>360</bg-angle-end>
+                  <rotate>270</rotate>
+                  <change-rate>720</change-rate>
+                </Attribute>
+                <Style/>
+                <Event/>
+              </Widget>
+              <Widget index="2" parent-id="1781857334178" is-hidden="0" group-id="-1" type="1" id="1781859356202" name="label_7">
+                <Normal>
+                  <name>label_7</name>
+                  <postion>150,220</postion>
+                  <size>200,80</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <text>0%</text>
+                  <long-mode>0</long-mode>
+                  <select-start>-1</select-start>
+                  <select-end>-1</select-end>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <text-align>2</text-align>
+                      <text-color>#ffffff</text-color>
+                      <text-font-size>70</text-font-size>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+            </Children>
+          </Widget>
+          <Widget index="2" parent-id="1781857125277" is-hidden="0" group-id="-1" type="28" id="1781857359562" name="cont_3">
+            <Normal>
+              <name>cont_3</name>
+              <postion>1157,400</postion>
+              <size>500,500</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute/>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <radius>30</radius>
+                  <pad-left>0</pad-left>
+                  <pad-right>0</pad-right>
+                  <pad-top>0</pad-top>
+                  <pad-bottom>0</pad-bottom>
+                  <border-width>0</border-width>
+                  <bg-color>#692815</bg-color>
+                </State>
+              </Part>
+            </Style>
+            <Event/>
+            <Children>
+              <Widget index="0" parent-id="1781857359562" is-hidden="0" group-id="-1" type="3" id="1781859479210" name="switch_lock">
+                <Normal>
+                  <name>switch_lock</name>
+                  <postion>50,175</postion>
+                  <size>400,150</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute/>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <radius>5000</radius>
+                      <bg-img-src>brightness.png</bg-img-src>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+              <Widget index="1" parent-id="1781857359562" is-hidden="0" group-id="-1" type="1" id="1781859540465" name="label_12">
+                <Normal>
+                  <name>label_12</name>
+                  <postion>30,30</postion>
+                  <size>300,60</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <text>Lock</text>
+                  <long-mode>0</long-mode>
+                  <select-start>-1</select-start>
+                  <select-end>-1</select-end>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <text-color>#ffffff</text-color>
+                      <text-font-size>50</text-font-size>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+              <Widget index="2" parent-id="1781857359562" is-hidden="0" group-id="-1" type="1" id="1781859567977" name="label_13">
+                <Normal>
+                  <name>label_13</name>
+                  <postion>50,420</postion>
+                  <size>400,50</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <text>Swipe to lock screen</text>
+                  <long-mode>0</long-mode>
+                  <select-start>-1</select-start>
+                  <select-end>-1</select-end>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <text-align>2</text-align>
+                      <text-color>#ffffff</text-color>
+                      <text-font-size>30</text-font-size>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+            </Children>
+          </Widget>
+          <Widget index="3" parent-id="1781857125277" is-hidden="0" group-id="-1" type="28" id="1781857399106" name="cont_4">
+            <Normal>
+              <name>cont_4</name>
+              <postion>1730,400</postion>
+              <size>700,500</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute/>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <radius>30</radius>
+                  <pad-left>0</pad-left>
+                  <pad-right>0</pad-right>
+                  <pad-top>0</pad-top>
+                  <pad-bottom>0</pad-bottom>
+                  <border-width>0</border-width>
+                  <bg-color>#5d3d28</bg-color>
+                </State>
+              </Part>
+            </Style>
+            <Event/>
+            <Children>
+              <Widget index="0" parent-id="1781857399106" is-hidden="0" group-id="-1" type="1" id="1781859725793" name="label_14">
+                <Normal>
+                  <name>label_14</name>
+                  <postion>30,30</postion>
+                  <size>300,60</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <text>Main Light</text>
+                  <long-mode>0</long-mode>
+                  <select-start>-1</select-start>
+                  <select-end>-1</select-end>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <text-color>#ffffff</text-color>
+                      <text-font-size>50</text-font-size>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+              <Widget index="1" parent-id="1781857399106" is-hidden="0" group-id="-1" type="8" id="1781860106269" name="slider_1">
+                <Normal>
+                  <name>slider_1</name>
+                  <postion>50,140</postion>
+                  <size>600,80</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <mode>0</mode>
+                  <min-value>0</min-value>
+                  <max-value>100</max-value>
+                  <left-value>0</left-value>
+                  <value>20</value>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <bg-opa>84</bg-opa>
+                      <bg-grad-color>#ffffff</bg-grad-color>
+                      <bg-color>#ffffff</bg-color>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+              <Widget index="2" parent-id="1781857399106" is-hidden="0" group-id="-1" type="1" id="1781860225817" name="label_16">
+                <Normal>
+                  <name>label_16</name>
+                  <postion>30,250</postion>
+                  <size>354,60</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <text>Light Temperature</text>
+                  <long-mode>0</long-mode>
+                  <select-start>-1</select-start>
+                  <select-end>-1</select-end>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <text-color>#ffffff</text-color>
+                      <text-font-size>30</text-font-size>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+              <Widget index="3" parent-id="1781857399106" is-hidden="0" group-id="-1" type="1" id="1781860234744" name="label_17">
+                <Normal>
+                  <name>label_17</name>
+                  <postion>30,300</postion>
+                  <size>200,50</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <text>0k</text>
+                  <long-mode>0</long-mode>
+                  <select-start>-1</select-start>
+                  <select-end>-1</select-end>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <text-color>#917c6e</text-color>
+                      <text-font-size>30</text-font-size>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+              <Widget index="4" parent-id="1781857399106" is-hidden="0" group-id="-1" type="8" id="1781860344576" name="slider_2">
+                <Normal>
+                  <name>slider_2</name>
+                  <postion>50,380</postion>
+                  <size>600,80</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <mode>0</mode>
+                  <min-value>0</min-value>
+                  <max-value>100</max-value>
+                  <left-value>0</left-value>
+                  <value>20</value>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <bg-opa>84</bg-opa>
+                      <bg-grad-color>#ffffff</bg-grad-color>
+                      <bg-color>#ffffff</bg-color>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+            </Children>
+          </Widget>
+          <Widget index="4" parent-id="1781857125277" is-hidden="0" group-id="-1" type="28" id="1781857419857" name="cont_5">
+            <Normal>
+              <name>cont_5</name>
+              <postion>2500,200</postion>
+              <size>900,800</size>
+              <scrollbar-mode>0</scrollbar-mode>
+              <flag></flag>
+            </Normal>
+            <Animate>
+              <use-anim>0</use-anim>
+            </Animate>
+            <ImgStorage>
+              <use-img-storage>0</use-img-storage>
+            </ImgStorage>
+            <FontStorage>
+              <use-font-storage>0</use-font-storage>
+            </FontStorage>
+            <Attribute/>
+            <Style>
+              <Part value="0" name="Main">
+                <State value="0" name="Default">
+                  <radius>30</radius>
+                  <pad-left>0</pad-left>
+                  <pad-right>0</pad-right>
+                  <pad-top>0</pad-top>
+                  <pad-bottom>0</pad-bottom>
+                  <border-width>0</border-width>
+                  <bg-color>#58281d</bg-color>
+                </State>
+              </Part>
+            </Style>
+            <Event/>
+            <Children>
+              <Widget index="0" parent-id="1781857419857" is-hidden="0" group-id="-1" type="1" id="1781859727289" name="label_15">
+                <Normal>
+                  <name>label_15</name>
+                  <postion>30,30</postion>
+                  <size>600,60</size>
+                  <scrollbar-mode>0</scrollbar-mode>
+                  <flag></flag>
+                </Normal>
+                <Animate>
+                  <use-anim>0</use-anim>
+                </Animate>
+                <ImgStorage>
+                  <use-img-storage>0</use-img-storage>
+                </ImgStorage>
+                <FontStorage>
+                  <use-font-storage>0</use-font-storage>
+                </FontStorage>
+                <Attribute>
+                  <text>Sensor Controls</text>
+                  <long-mode>0</long-mode>
+                  <select-start>-1</select-start>
+                  <select-end>-1</select-end>
+                </Attribute>
+                <Style>
+                  <Part value="0" name="Main">
+                    <State value="0" name="Default">
+                      <text-color>#ffffff</text-color>
+                      <text-font-size>50</text-font-size>
+                    </State>
+                  </Part>
+                </Style>
+                <Event/>
+              </Widget>
+            </Children>
+          </Widget>
+        </Children>
+      </Widget>
+    </Widgets>
+  </Screen>
+  <Screen index="3" is-default="0" id="1781850356857" name="scrSmartMeter">
+    <Normal>
+      <name>scrSmartMeter</name>
+      <scrollbar-mode>0</scrollbar-mode>
+      <flag></flag>
+    </Normal>
+    <Animate>
+      <use-anim>0</use-anim>
+    </Animate>
+    <ImgStorage>
+      <use-img-storage>0</use-img-storage>
+    </ImgStorage>
+    <FontStorage>
+      <use-font-storage>0</use-font-storage>
+    </FontStorage>
+    <Attribute/>
+    <Style>
+      <Part value="0" name="Main">
+        <State value="0" name="Default">
+          <bg-color>#26190f</bg-color>
+        </State>
+      </Part>
+    </Style>
+    <Event/>
+    <Widgets>
+      <Widget index="0" is-hidden="0" type="5" id="1781860970744" name="back">
+        <Normal>
+          <name>back</name>
+          <postion>50,50</postion>
+          <size>100,100</size>
+          <scrollbar-mode>0</scrollbar-mode>
+          <flag>2_1</flag>
+        </Normal>
+        <Animate>
+          <use-anim>0</use-anim>
+        </Animate>
+        <ImgStorage>
+          <use-img-storage>0</use-img-storage>
+        </ImgStorage>
+        <FontStorage>
+          <use-font-storage>0</use-font-storage>
+        </FontStorage>
+        <Attribute>
+          <src>back1.png</src>
+          <center-x>50</center-x>
+          <center-y>50</center-y>
+          <offset-x>0</offset-x>
+          <offset-y>0</offset-y>
+          <rotate>0</rotate>
+        </Attribute>
+        <Style>
+          <Part value="0" name="Main">
+            <State value="0" name="Default">
+              <img-recolor>#ffffff</img-recolor>
+            </State>
+          </Part>
+        </Style>
+        <Event>
+          <Clicked eventId="7" itemIdx="-1">
+            <Object id="1781764894376">
+              <Attr index="0" ps="-1" id="550">0_0_0</Attr>
+            </Object>
+          </Clicked>
+        </Event>
+      </Widget>
+      <Widget index="1" is-hidden="0" type="1" id="1781861056880" name="label_20">
+        <Normal>
+          <name>label_20</name>
+          <postion>50,200</postion>
+          <size>580,100</size>
+          <scrollbar-mode>0</scrollbar-mode>
+          <flag></flag>
+        </Normal>
+        <Animate>
+          <use-anim>0</use-anim>
+        </Animate>
+        <ImgStorage>
+          <use-img-storage>0</use-img-storage>
+        </ImgStorage>
+        <FontStorage>
+          <use-font-storage>0</use-font-storage>
+        </FontStorage>
+        <Attribute>
+          <text>Smart Meter</text>
+          <long-mode>0</long-mode>
+          <select-start>-1</select-start>
+          <select-end>-1</select-end>
+        </Attribute>
+        <Style>
+          <Part value="0" name="Main">
+            <State value="0" name="Default">
+              <text-color>#ffffff</text-color>
+              <text-font-size>80</text-font-size>
+            </State>
+          </Part>
+        </Style>
+        <Event/>
+      </Widget>
+    </Widgets>
+  </Screen>
+  <Screen index="4" is-default="0" id="1781850382508" name="scrAbout">
+    <Normal>
+      <name>scrAbout</name>
+      <scrollbar-mode>0</scrollbar-mode>
+      <flag></flag>
+    </Normal>
+    <Animate>
+      <use-anim>0</use-anim>
+    </Animate>
+    <ImgStorage>
+      <use-img-storage>0</use-img-storage>
+    </ImgStorage>
+    <FontStorage>
+      <use-font-storage>0</use-font-storage>
+    </FontStorage>
+    <Attribute/>
+    <Style>
+      <Part value="0" name="Main">
+        <State value="0" name="Default">
+          <bg-color>#26190f</bg-color>
+        </State>
+      </Part>
+    </Style>
+    <Event/>
+    <Widgets>
+      <Widget index="0" is-hidden="0" type="5" id="1781860452409" name="back">
+        <Normal>
+          <name>back</name>
+          <postion>50,50</postion>
+          <size>100,100</size>
+          <scrollbar-mode>0</scrollbar-mode>
+          <flag>2_1</flag>
+        </Normal>
+        <Animate>
+          <use-anim>0</use-anim>
+        </Animate>
+        <ImgStorage>
+          <use-img-storage>0</use-img-storage>
+        </ImgStorage>
+        <FontStorage>
+          <use-font-storage>0</use-font-storage>
+        </FontStorage>
+        <Attribute>
+          <src>back1.png</src>
+          <center-x>50</center-x>
+          <center-y>50</center-y>
+          <offset-x>0</offset-x>
+          <offset-y>0</offset-y>
+          <rotate>0</rotate>
+        </Attribute>
+        <Style>
+          <Part value="0" name="Main">
+            <State value="0" name="Default">
+              <img-recolor>#ffffff</img-recolor>
+            </State>
+          </Part>
+        </Style>
+        <Event>
+          <Clicked eventId="7" itemIdx="-1">
+            <Object id="1781764894376">
+              <Attr index="0" ps="-1" id="550">0_0_0</Attr>
+            </Object>
+          </Clicked>
+        </Event>
+      </Widget>
+      <Widget index="1" is-hidden="0" type="1" id="1781860505976" name="label_18">
+        <Normal>
+          <name>label_18</name>
+          <postion>50,200</postion>
+          <size>580,100</size>
+          <scrollbar-mode>0</scrollbar-mode>
+          <flag></flag>
+        </Normal>
+        <Animate>
+          <use-anim>0</use-anim>
+        </Animate>
+        <ImgStorage>
+          <use-img-storage>0</use-img-storage>
+        </ImgStorage>
+        <FontStorage>
+          <use-font-storage>0</use-font-storage>
+        </FontStorage>
+        <Attribute>
+          <text>About us</text>
+          <long-mode>0</long-mode>
+          <select-start>-1</select-start>
+          <select-end>-1</select-end>
+        </Attribute>
+        <Style>
+          <Part value="0" name="Main">
+            <State value="0" name="Default">
+              <text-color>#ffffff</text-color>
+              <text-font-size>80</text-font-size>
+            </State>
+          </Part>
+        </Style>
+        <Event/>
+      </Widget>
+      <Widget index="2" is-hidden="0" type="1" id="1781860588498" name="label_19">
+        <Normal>
+          <name>label_19</name>
+          <postion>60,400</postion>
+          <size>1800,600</size>
+          <scrollbar-mode>0</scrollbar-mode>
+          <flag></flag>
+        </Normal>
+        <Animate>
+          <use-anim>0</use-anim>
+        </Animate>
+        <ImgStorage>
+          <use-img-storage>0</use-img-storage>
+        </ImgStorage>
+        <FontStorage>
+          <use-font-storage>0</use-font-storage>
+        </FontStorage>
+        <Attribute>
+          <text>HOTDISPLAY Technology Co., Ltd. Established in 2004, it is a leading LCD manufacturer dedicated to providing cutting-edge solutions for various industries. We focus on the design and production of high-performance LCD modules, including single-color TFT displays, COG LCD modules, graphic LCD modules, character LCD modules, touch screens, and OLED segmented LCD displays. We persistently focus on innovation, quality, and customer-centered services, providing advanced visualization technologies to global partners. \n\nWe have an experienced R&amp;D team. In terms of quality, we are reliable; in terms of innovation, we never give up! We are committed to providing you with the best display solutions!</text>
+          <long-mode>0</long-mode>
+          <select-start>-1</select-start>
+          <select-end>-1</select-end>
+        </Attribute>
+        <Style>
+          <Part value="0" name="Main">
+            <State value="0" name="Default">
+              <text-color>#ffffff</text-color>
+              <text-font-size>40</text-font-size>
+            </State>
+          </Part>
+        </Style>
+        <Event/>
+      </Widget>
+    </Widgets>
+  </Screen>
+</ailv-app>
