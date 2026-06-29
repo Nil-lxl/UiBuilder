@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ailv-app>
-  <Screen index="0" name="screen" id="1776848761117" is-default="1">
+  <Screen name="screen" is-default="1" id="1776848761117" index="0">
     <Normal>
       <name>screen</name>
       <scrollbar-mode>0</scrollbar-mode>
@@ -17,8 +17,8 @@
     </FontStorage>
     <Attribute/>
     <Style>
-      <Part value="0" name="Main">
-        <State value="0" name="Default">
+      <Part name="Main" value="0">
+        <State name="Default" value="0">
           <bg-color>#000000</bg-color>
         </State>
       </Part>
@@ -29,7 +29,7 @@
       </LoadStart>
     </Event>
     <Widgets>
-      <Widget type="28" is-hidden="0" index="0" name="disp_area" id="1776848803227">
+      <Widget name="disp_area" is-hidden="0" id="1776848803227" index="0" type="28">
         <Normal>
           <name>disp_area</name>
           <postion>32,0</postion>
@@ -48,22 +48,22 @@
         </FontStorage>
         <Attribute/>
         <Style>
-          <Part value="0" name="Main">
-            <State value="0" name="Default">
-              <bg-color>#e2d9db</bg-color>
-              <radius>0</radius>
+          <Part name="Main" value="0">
+            <State name="Default" value="0">
               <bg-grad-color>#3f3cfa</bg-grad-color>
-              <pad-right>0</pad-right>
               <border-width>0</border-width>
-              <pad-left>0</pad-left>
               <pad-bottom>0</pad-bottom>
               <pad-top>0</pad-top>
+              <pad-right>0</pad-right>
+              <pad-left>0</pad-left>
+              <radius>0</radius>
+              <bg-color>#e2d9db</bg-color>
             </State>
           </Part>
         </Style>
         <Event/>
         <Children>
-          <Widget parent-id="1776848803227" type="6" group-id="-1" is-hidden="0" index="0" name="grad_bar1" id="1776849094207">
+          <Widget name="grad_bar1" is-hidden="0" parent-id="1776848803227" id="1776849094207" index="0" type="6" group-id="-1">
             <Normal>
               <name>grad_bar1</name>
               <postion>33,120</postion>
@@ -89,8 +89,8 @@
               <is-animate>0</is-animate>
             </Attribute>
             <Style>
-              <Part value="0" name="Main">
-                <State value="0" name="Default">
+              <Part name="Main" value="0">
+                <State name="Default" value="0">
                   <bg-opa>255</bg-opa>
                   <bg-color>#191a1e</bg-color>
                 </State>
@@ -98,7 +98,7 @@
             </Style>
             <Event/>
           </Widget>
-          <Widget parent-id="1776848803227" type="6" group-id="-1" is-hidden="0" index="1" name="grad_bar2" id="1776849640362">
+          <Widget name="grad_bar2" is-hidden="0" parent-id="1776848803227" id="1776849640362" index="1" type="6" group-id="-1">
             <Normal>
               <name>grad_bar2</name>
               <postion>33,170</postion>
@@ -124,8 +124,8 @@
               <is-animate>0</is-animate>
             </Attribute>
             <Style>
-              <Part value="0" name="Main">
-                <State value="0" name="Default">
+              <Part name="Main" value="0">
+                <State name="Default" value="0">
                   <bg-opa>255</bg-opa>
                   <bg-color>#191a1e</bg-color>
                 </State>
@@ -133,7 +133,7 @@
             </Style>
             <Event/>
           </Widget>
-          <Widget parent-id="1776848803227" type="6" group-id="-1" is-hidden="0" index="2" name="grad_bar3" id="1776849659020">
+          <Widget name="grad_bar3" is-hidden="0" parent-id="1776848803227" id="1776849659020" index="2" type="6" group-id="-1">
             <Normal>
               <name>grad_bar3</name>
               <postion>33,220</postion>
@@ -159,8 +159,8 @@
               <is-animate>0</is-animate>
             </Attribute>
             <Style>
-              <Part value="0" name="Main">
-                <State value="0" name="Default">
+              <Part name="Main" value="0">
+                <State name="Default" value="0">
                   <bg-opa>255</bg-opa>
                   <bg-color>#191a1e</bg-color>
                 </State>
@@ -168,7 +168,7 @@
             </Style>
             <Event/>
           </Widget>
-          <Widget parent-id="1776848803227" type="6" group-id="-1" is-hidden="0" index="3" name="grad_bar4" id="1776849660761">
+          <Widget name="grad_bar4" is-hidden="0" parent-id="1776848803227" id="1776849660761" index="3" type="6" group-id="-1">
             <Normal>
               <name>grad_bar4</name>
               <postion>33,270</postion>
@@ -194,8 +194,8 @@
               <is-animate>0</is-animate>
             </Attribute>
             <Style>
-              <Part value="0" name="Main">
-                <State value="0" name="Default">
+              <Part name="Main" value="0">
+                <State name="Default" value="0">
                   <bg-opa>255</bg-opa>
                   <bg-color>#191a1e</bg-color>
                 </State>
@@ -203,7 +203,7 @@
             </Style>
             <Event/>
           </Widget>
-          <Widget parent-id="1776848803227" type="28" group-id="-1" is-hidden="0" index="4" name="bars_cont" id="1776850870381">
+          <Widget name="bars_cont" is-hidden="0" parent-id="1776848803227" id="1776850870381" index="4" type="28" group-id="-1">
             <Normal>
               <name>bars_cont</name>
               <postion>28,350</postion>
@@ -222,21 +222,21 @@
             </FontStorage>
             <Attribute/>
             <Style>
-              <Part value="0" name="Main">
-                <State value="0" name="Default">
-                  <bg-color>#191a1e</bg-color>
-                  <radius>30</radius>
-                  <pad-right>0</pad-right>
+              <Part name="Main" value="0">
+                <State name="Default" value="0">
                   <border-width>0</border-width>
-                  <pad-left>0</pad-left>
                   <pad-bottom>0</pad-bottom>
                   <pad-top>0</pad-top>
+                  <pad-right>0</pad-right>
+                  <pad-left>0</pad-left>
+                  <radius>30</radius>
+                  <bg-color>#191a1e</bg-color>
                 </State>
               </Part>
             </Style>
             <Event/>
             <Children>
-              <Widget parent-id="1776850870381" type="6" group-id="-1" is-hidden="0" index="0" name="music_bar1" id="1776904318490">
+              <Widget name="music_bar1" is-hidden="0" parent-id="1776850870381" id="1776904318490" index="0" type="6" group-id="-1">
                 <Normal>
                   <name>music_bar1</name>
                   <postion>40,25</postion>
@@ -262,15 +262,15 @@
                   <is-animate>0</is-animate>
                 </Attribute>
                 <Style>
-                  <Part value="0" name="Main">
-                    <State value="0" name="Default">
+                  <Part name="Main" value="0">
+                    <State name="Default" value="0">
                       <bg-opa>0</bg-opa>
                     </State>
                   </Part>
                 </Style>
                 <Event/>
               </Widget>
-              <Widget parent-id="1776850870381" type="6" group-id="-1" is-hidden="0" index="1" name="music_bar2" id="1776904386219">
+              <Widget name="music_bar2" is-hidden="0" parent-id="1776850870381" id="1776904386219" index="1" type="6" group-id="-1">
                 <Normal>
                   <name>music_bar2</name>
                   <postion>90,25</postion>
@@ -296,15 +296,15 @@
                   <is-animate>0</is-animate>
                 </Attribute>
                 <Style>
-                  <Part value="0" name="Main">
-                    <State value="0" name="Default">
+                  <Part name="Main" value="0">
+                    <State name="Default" value="0">
                       <bg-opa>0</bg-opa>
                     </State>
                   </Part>
                 </Style>
                 <Event/>
               </Widget>
-              <Widget parent-id="1776850870381" type="6" group-id="-1" is-hidden="0" index="2" name="music_bar3" id="1776904391139">
+              <Widget name="music_bar3" is-hidden="0" parent-id="1776850870381" id="1776904391139" index="2" type="6" group-id="-1">
                 <Normal>
                   <name>music_bar3</name>
                   <postion>140,25</postion>
@@ -330,15 +330,15 @@
                   <is-animate>0</is-animate>
                 </Attribute>
                 <Style>
-                  <Part value="0" name="Main">
-                    <State value="0" name="Default">
+                  <Part name="Main" value="0">
+                    <State name="Default" value="0">
                       <bg-opa>0</bg-opa>
                     </State>
                   </Part>
                 </Style>
                 <Event/>
               </Widget>
-              <Widget parent-id="1776850870381" type="6" group-id="-1" is-hidden="0" index="3" name="music_bar4" id="1776904392851">
+              <Widget name="music_bar4" is-hidden="0" parent-id="1776850870381" id="1776904392851" index="3" type="6" group-id="-1">
                 <Normal>
                   <name>music_bar4</name>
                   <postion>190,25</postion>
@@ -364,15 +364,15 @@
                   <is-animate>0</is-animate>
                 </Attribute>
                 <Style>
-                  <Part value="0" name="Main">
-                    <State value="0" name="Default">
+                  <Part name="Main" value="0">
+                    <State name="Default" value="0">
                       <bg-opa>0</bg-opa>
                     </State>
                   </Part>
                 </Style>
                 <Event/>
               </Widget>
-              <Widget parent-id="1776850870381" type="6" group-id="-1" is-hidden="0" index="4" name="music_bar5" id="1776904394250">
+              <Widget name="music_bar5" is-hidden="0" parent-id="1776850870381" id="1776904394250" index="4" type="6" group-id="-1">
                 <Normal>
                   <name>music_bar5</name>
                   <postion>240,25</postion>
@@ -398,15 +398,15 @@
                   <is-animate>0</is-animate>
                 </Attribute>
                 <Style>
-                  <Part value="0" name="Main">
-                    <State value="0" name="Default">
+                  <Part name="Main" value="0">
+                    <State name="Default" value="0">
                       <bg-opa>0</bg-opa>
                     </State>
                   </Part>
                 </Style>
                 <Event/>
               </Widget>
-              <Widget parent-id="1776850870381" type="6" group-id="-1" is-hidden="0" index="5" name="music_bar6" id="1776904432195">
+              <Widget name="music_bar6" is-hidden="0" parent-id="1776850870381" id="1776904432195" index="5" type="6" group-id="-1">
                 <Normal>
                   <name>music_bar6</name>
                   <postion>290,25</postion>
@@ -432,8 +432,8 @@
                   <is-animate>0</is-animate>
                 </Attribute>
                 <Style>
-                  <Part value="0" name="Main">
-                    <State value="0" name="Default">
+                  <Part name="Main" value="0">
+                    <State name="Default" value="0">
                       <bg-opa>0</bg-opa>
                       <bg-color>#000000</bg-color>
                     </State>
@@ -443,7 +443,7 @@
               </Widget>
             </Children>
           </Widget>
-          <Widget parent-id="1776848803227" type="28" group-id="-1" is-hidden="0" index="5" name="container_2" id="1776850924607">
+          <Widget name="container_2" is-hidden="0" parent-id="1776848803227" id="1776850924607" index="5" type="28" group-id="-1">
             <Normal>
               <name>container_2</name>
               <postion>33,600</postion>
@@ -462,24 +462,24 @@
             </FontStorage>
             <Attribute/>
             <Style>
-              <Part value="0" name="Main">
-                <State value="0" name="Default">
-                  <bg-color>#123dfe</bg-color>
-                  <radius>30</radius>
-                  <bg-grad-color>#d135f0</bg-grad-color>
-                  <pad-right>0</pad-right>
-                  <bg-grad-stop>213</bg-grad-stop>
-                  <border-width>0</border-width>
-                  <pad-left>0</pad-left>
+              <Part name="Main" value="0">
+                <State name="Default" value="0">
                   <bg-grad-dir>1</bg-grad-dir>
+                  <bg-grad-color>#d135f0</bg-grad-color>
+                  <border-width>0</border-width>
+                  <bg-grad-stop>213</bg-grad-stop>
                   <pad-bottom>0</pad-bottom>
                   <pad-top>0</pad-top>
+                  <pad-right>0</pad-right>
+                  <pad-left>0</pad-left>
+                  <radius>30</radius>
+                  <bg-color>#123dfe</bg-color>
                 </State>
               </Part>
             </Style>
             <Event/>
             <Children>
-              <Widget parent-id="1776850924607" type="28" group-id="-1" is-hidden="0" index="0" name="arc_cont" id="1776851057536">
+              <Widget name="arc_cont" is-hidden="0" parent-id="1776850924607" id="1776851057536" index="0" type="28" group-id="-1">
                 <Normal>
                   <name>arc_cont</name>
                   <postion>15,15</postion>
@@ -498,22 +498,22 @@
                 </FontStorage>
                 <Attribute/>
                 <Style>
-                  <Part value="0" name="Main">
-                    <State value="0" name="Default">
-                      <bg-opa>86</bg-opa>
-                      <bg-color>#191a1e</bg-color>
-                      <radius>100</radius>
-                      <pad-right>0</pad-right>
+                  <Part name="Main" value="0">
+                    <State name="Default" value="0">
                       <border-width>0</border-width>
-                      <pad-left>0</pad-left>
                       <pad-bottom>0</pad-bottom>
                       <pad-top>0</pad-top>
+                      <pad-right>0</pad-right>
+                      <pad-left>0</pad-left>
+                      <bg-opa>86</bg-opa>
+                      <radius>100</radius>
+                      <bg-color>#191a1e</bg-color>
                     </State>
                   </Part>
                 </Style>
                 <Event/>
                 <Children>
-                  <Widget parent-id="1776851057536" type="1" group-id="-1" is-hidden="0" index="0" name="pct_num" id="1776904156397">
+                  <Widget name="pct_num" is-hidden="0" parent-id="1776851057536" id="1776904156397" index="0" type="1" group-id="-1">
                     <Normal>
                       <name>pct_num</name>
                       <postion>53,64</postion>
@@ -537,8 +537,8 @@
                       <select-end>-1</select-end>
                     </Attribute>
                     <Style>
-                      <Part value="0" name="Main">
-                        <State value="0" name="Default">
+                      <Part name="Main" value="0">
+                        <State name="Default" value="0">
                           <text-font-size>20</text-font-size>
                           <text-align>2</text-align>
                           <text-color>#ffffff</text-color>
@@ -547,7 +547,7 @@
                     </Style>
                     <Event/>
                   </Widget>
-                  <Widget parent-id="1776851057536" type="12" group-id="-1" is-hidden="0" index="1" name="arc_1" id="1776851111657">
+                  <Widget name="arc_1" is-hidden="0" parent-id="1776851057536" id="1776851111657" index="1" type="12" group-id="-1">
                     <Normal>
                       <name>arc_1</name>
                       <postion>15,15</postion>
@@ -577,11 +577,11 @@
                       <change-rate>720</change-rate>
                     </Attribute>
                     <Style>
-                      <Part value="0" name="Main">
-                        <State value="0" name="Default">
-                          <arc-opa>0</arc-opa>
+                      <Part name="Main" value="0">
+                        <State name="Default" value="0">
                           <arc-rounded>0</arc-rounded>
                           <arc-width>20</arc-width>
+                          <arc-opa>0</arc-opa>
                         </State>
                       </Part>
                     </Style>
@@ -589,7 +589,7 @@
                   </Widget>
                 </Children>
               </Widget>
-              <Widget parent-id="1776850924607" type="1" group-id="-1" is-hidden="0" index="1" name="label_2" id="1776913414033">
+              <Widget name="label_2" is-hidden="0" parent-id="1776850924607" id="1776913414033" index="1" type="1" group-id="-1">
                 <Normal>
                   <name>label_2</name>
                   <postion>195,60</postion>
@@ -613,8 +613,8 @@
                   <select-end>-1</select-end>
                 </Attribute>
                 <Style>
-                  <Part value="0" name="Main">
-                    <State value="0" name="Default">
+                  <Part name="Main" value="0">
+                    <State name="Default" value="0">
                       <text-font-size>30</text-font-size>
                       <text-align>2</text-align>
                       <text-color>#ffffff</text-color>
@@ -623,7 +623,7 @@
                 </Style>
                 <Event/>
               </Widget>
-              <Widget parent-id="1776850924607" type="1" group-id="-1" is-hidden="0" index="2" name="money_num" id="1776913615664">
+              <Widget name="money_num" is-hidden="0" parent-id="1776850924607" id="1776913615664" index="2" type="1" group-id="-1">
                 <Normal>
                   <name>money_num</name>
                   <postion>200,60</postion>
@@ -647,8 +647,8 @@
                   <select-end>-1</select-end>
                 </Attribute>
                 <Style>
-                  <Part value="0" name="Main">
-                    <State value="0" name="Default">
+                  <Part name="Main" value="0">
+                    <State name="Default" value="0">
                       <text-font-size>30</text-font-size>
                       <text-align>2</text-align>
                       <text-color>#ffffff</text-color>
@@ -657,7 +657,7 @@
                 </Style>
                 <Event/>
               </Widget>
-              <Widget parent-id="1776850924607" type="1" group-id="-1" is-hidden="0" index="3" name="label_4" id="1776913700008">
+              <Widget name="label_4" is-hidden="0" parent-id="1776850924607" id="1776913700008" index="3" type="1" group-id="-1">
                 <Normal>
                   <name>label_4</name>
                   <postion>155,115</postion>
@@ -681,8 +681,8 @@
                   <select-end>-1</select-end>
                 </Attribute>
                 <Style>
-                  <Part value="0" name="Main">
-                    <State value="0" name="Default">
+                  <Part name="Main" value="0">
+                    <State name="Default" value="0">
                       <text-font-size>18</text-font-size>
                       <text-align>2</text-align>
                       <text-color>#ffffff</text-color>
@@ -693,7 +693,7 @@
               </Widget>
             </Children>
           </Widget>
-          <Widget parent-id="1776848803227" type="5" group-id="-1" is-hidden="0" index="6" name="image_1" id="1776908390064">
+          <Widget name="image_1" is-hidden="0" parent-id="1776848803227" id="1776908390064" index="6" type="5" group-id="-1">
             <Normal>
               <name>image_1</name>
               <postion>58,10</postion>
@@ -721,7 +721,7 @@
             <Style/>
             <Event/>
           </Widget>
-          <Widget parent-id="1776848803227" type="28" group-id="-1" is-hidden="0" index="7" name="container_1" id="1776914784687">
+          <Widget name="container_1" is-hidden="0" parent-id="1776848803227" id="1776914784687" index="7" type="28" group-id="-1">
             <Normal>
               <name>container_1</name>
               <postion>18,910</postion>
@@ -740,22 +740,22 @@
             </FontStorage>
             <Attribute/>
             <Style>
-              <Part value="0" name="Main">
-                <State value="0" name="Default">
-                  <bg-opa>0</bg-opa>
-                  <bg-color>#eff8f5</bg-color>
-                  <radius>27</radius>
-                  <pad-right>0</pad-right>
+              <Part name="Main" value="0">
+                <State name="Default" value="0">
                   <border-color>#191a1e</border-color>
-                  <pad-left>0</pad-left>
                   <pad-bottom>0</pad-bottom>
                   <pad-top>0</pad-top>
+                  <pad-right>0</pad-right>
+                  <pad-left>0</pad-left>
+                  <bg-opa>0</bg-opa>
+                  <radius>27</radius>
+                  <bg-color>#eff8f5</bg-color>
                 </State>
               </Part>
             </Style>
             <Event/>
             <Children>
-              <Widget parent-id="1776914784687" type="5" group-id="-1" is-hidden="0" index="0" name="image_7" id="1776914609636">
+              <Widget name="image_7" is-hidden="0" parent-id="1776914784687" id="1776914609636" index="0" type="5" group-id="-1">
                 <Normal>
                   <name>image_7</name>
                   <postion>13,23</postion>
@@ -783,7 +783,7 @@
                 <Style/>
                 <Event/>
               </Widget>
-              <Widget parent-id="1776914784687" type="5" group-id="-1" is-hidden="0" index="1" name="image_8" id="1776914701950">
+              <Widget name="image_8" is-hidden="0" parent-id="1776914784687" id="1776914701950" index="1" type="5" group-id="-1">
                 <Normal>
                   <name>image_8</name>
                   <postion>88,23</postion>
@@ -811,7 +811,7 @@
                 <Style/>
                 <Event/>
               </Widget>
-              <Widget parent-id="1776914784687" type="5" group-id="-1" is-hidden="0" index="2" name="image_9" id="1776914702654">
+              <Widget name="image_9" is-hidden="0" parent-id="1776914784687" id="1776914702654" index="2" type="5" group-id="-1">
                 <Normal>
                   <name>image_9</name>
                   <postion>163,23</postion>
@@ -839,7 +839,7 @@
                 <Style/>
                 <Event/>
               </Widget>
-              <Widget parent-id="1776914784687" type="5" group-id="-1" is-hidden="0" index="3" name="image_10" id="1776914703038">
+              <Widget name="image_10" is-hidden="0" parent-id="1776914784687" id="1776914703038" index="3" type="5" group-id="-1">
                 <Normal>
                   <name>image_10</name>
                   <postion>238,23</postion>
@@ -867,7 +867,7 @@
                 <Style/>
                 <Event/>
               </Widget>
-              <Widget parent-id="1776914784687" type="5" group-id="-1" is-hidden="0" index="4" name="image_11" id="1776914703685">
+              <Widget name="image_11" is-hidden="0" parent-id="1776914784687" id="1776914703685" index="4" type="5" group-id="-1">
                 <Normal>
                   <name>image_11</name>
                   <postion>313,23</postion>
@@ -897,7 +897,7 @@
               </Widget>
             </Children>
           </Widget>
-          <Widget parent-id="1776848803227" type="5" group-id="-1" is-hidden="0" index="8" name="image_12" id="1776915136688">
+          <Widget name="image_12" is-hidden="0" parent-id="1776848803227" id="1776915136688" index="8" type="5" group-id="-1">
             <Normal>
               <name>image_12</name>
               <postion>17,812</postion>
@@ -925,7 +925,7 @@
             <Style/>
             <Event/>
           </Widget>
-          <Widget parent-id="1776848803227" type="1" group-id="-1" is-hidden="0" index="9" name="volume_label" id="1776915375372">
+          <Widget name="volume_label" is-hidden="0" parent-id="1776848803227" id="1776915375372" index="9" type="1" group-id="-1">
             <Normal>
               <name>volume_label</name>
               <postion>171,869</postion>
@@ -949,8 +949,8 @@
               <select-end>-1</select-end>
             </Attribute>
             <Style>
-              <Part value="0" name="Main">
-                <State value="0" name="Default">
+              <Part name="Main" value="0">
+                <State name="Default" value="0">
                   <text-font-size>20</text-font-size>
                   <text-align>2</text-align>
                   <text-color>#191a1e</text-color>
@@ -959,7 +959,7 @@
             </Style>
             <Event/>
           </Widget>
-          <Widget parent-id="1776848803227" type="28" group-id="-1" is-hidden="0" index="10" name="dropdown_cont" id="1776924925100">
+          <Widget name="dropdown_cont" is-hidden="0" parent-id="1776848803227" id="1776924925100" index="10" type="28" group-id="-1">
             <Normal>
               <name>dropdown_cont</name>
               <postion>18,1050</postion>
@@ -978,24 +978,24 @@
             </FontStorage>
             <Attribute/>
             <Style>
-              <Part value="0" name="Main">
-                <State value="0" name="Default">
-                  <bg-color>#191a1e</bg-color>
-                  <radius>20</radius>
-                  <pad-right>0</pad-right>
-                  <pad-left>0</pad-left>
+              <Part name="Main" value="0">
+                <State name="Default" value="0">
                   <border-width>0</border-width>
                   <pad-bottom>0</pad-bottom>
                   <pad-top>0</pad-top>
+                  <pad-right>0</pad-right>
+                  <pad-left>0</pad-left>
+                  <radius>20</radius>
+                  <bg-color>#191a1e</bg-color>
                 </State>
               </Part>
             </Style>
             <Event/>
             <Children>
-              <Widget parent-id="1776924925100" type="7" group-id="-1" is-hidden="0" index="0" name="dropdown_1" id="1776924106513">
+              <Widget name="dropdown_1" is-hidden="0" parent-id="1776924925100" id="1776924106513" index="0" type="7" group-id="-1">
                 <Normal>
                   <name>dropdown_1</name>
-                  <postion>43,15</postion>
+                  <postion>40,15</postion>
                   <size>300,50</size>
                   <scrollbar-mode>0</scrollbar-mode>
                   <flag></flag>
@@ -1020,40 +1020,40 @@
                   <is-open>1</is-open>
                 </Attribute>
                 <Style>
-                  <Part value="0" name="Main">
-                    <State value="0" name="Default">
+                  <Part name="Main" value="0">
+                    <State name="Default" value="0">
                       <text-font-size>18</text-font-size>
-                      <bg-color>#191a1e</bg-color>
-                      <radius>20</radius>
-                      <text-color>#ffffff</text-color>
-                      <border-opa>164</border-opa>
-                      <pad-right>20</pad-right>
                       <border-color>#d135f0</border-color>
-                      <pad-left>20</pad-left>
                       <border-width>0</border-width>
+                      <border-opa>164</border-opa>
                       <pad-top>13</pad-top>
+                      <pad-right>20</pad-right>
+                      <pad-left>20</pad-left>
+                      <radius>20</radius>
+                      <bg-color>#191a1e</bg-color>
+                      <text-color>#ffffff</text-color>
                     </State>
                   </Part>
-                  <Part value="262144" name="Selected">
-                    <State value="1" name="Checked">
-                      <bg-color>#123dfe</bg-color>
-                      <radius>20</radius>
-                      <bg-grad-color>#d135f0</bg-grad-color>
+                  <Part name="Selected" value="262144">
+                    <State name="Checked" value="1">
                       <border-color>#123dfe</border-color>
                       <bg-grad-dir>2</bg-grad-dir>
+                      <bg-grad-color>#d135f0</bg-grad-color>
+                      <radius>20</radius>
+                      <bg-color>#123dfe</bg-color>
                     </State>
                   </Part>
-                  <Part value="589824" name="List">
-                    <State value="0" name="Default">
-                      <bg-color>#191a1e</bg-color>
-                      <radius>0</radius>
-                      <text-color>#ffffff</text-color>
+                  <Part name="List" value="589824">
+                    <State name="Default" value="0">
                       <border-color>#d135f0</border-color>
                       <border-width>0</border-width>
+                      <radius>0</radius>
+                      <bg-color>#191a1e</bg-color>
+                      <text-color>#ffffff</text-color>
                     </State>
                   </Part>
-                  <Part value="65536" name="Scrollbar">
-                    <State value="0" name="Default">
+                  <Part name="Scrollbar" value="65536">
+                    <State name="Default" value="0">
                       <bg-opa>0</bg-opa>
                     </State>
                   </Part>
@@ -1064,7 +1064,7 @@
           </Widget>
         </Children>
       </Widget>
-      <Widget type="8" is-hidden="0" index="1" name="slider_1" id="1776909815001">
+      <Widget name="slider_1" is-hidden="0" id="1776909815001" index="1" type="8">
         <Normal>
           <name>slider_1</name>
           <postion>120,830</postion>
@@ -1089,8 +1089,8 @@
           <value>50</value>
         </Attribute>
         <Style>
-          <Part value="0" name="Main">
-            <State value="0" name="Default">
+          <Part name="Main" value="0">
+            <State name="Default" value="0">
               <bg-opa>255</bg-opa>
               <bg-color>#191a1e</bg-color>
             </State>

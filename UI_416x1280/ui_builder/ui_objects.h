@@ -74,8 +74,8 @@ void screen_create(ui_manager_t *ui);
 
 
 extern lv_font_t *fs_montserratmedium_16;
-extern lv_font_t *fs_montserratmedium_20;
 extern lv_font_t *fs_montserratmedium_30;
+extern lv_font_t *fs_montserratmedium_20;
 extern lv_font_t *fs_montserratmedium_18;
 
 

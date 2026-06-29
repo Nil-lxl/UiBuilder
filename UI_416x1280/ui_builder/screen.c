@@ -43,14 +43,14 @@ void screen_create(ui_manager_t *ui)
     lv_obj_set_scrollbar_mode(scr->disp_area, LV_SCROLLBAR_MODE_OFF);
 
     // Set style of scr->disp_area
-    lv_obj_set_style_bg_grad_color(scr->disp_area, lv_color_hex(0x3f3cfa), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_color(scr->disp_area, lv_color_hex(0xe2d9db), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_width(scr->disp_area, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_pad_top(scr->disp_area, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_pad_bottom(scr->disp_area, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_pad_left(scr->disp_area, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_top(scr->disp_area, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_pad_right(scr->disp_area, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_left(scr->disp_area, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_radius(scr->disp_area, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_grad_color(scr->disp_area, lv_color_hex(0x3f3cfa), LV_PART_MAIN | LV_STATE_DEFAULT);
 
     // Init scr->grad_bar1
     scr->grad_bar1 = lv_bar_create(scr->disp_area);
@@ -61,8 +61,8 @@ void screen_create(ui_manager_t *ui)
     lv_obj_set_size(scr->grad_bar1, 350, 30);
 
     // Set style of scr->grad_bar1
-    lv_obj_set_style_bg_color(scr->grad_bar1, lv_color_hex(0x191a1e), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(scr->grad_bar1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_color(scr->grad_bar1, lv_color_hex(0x191a1e), LV_PART_MAIN | LV_STATE_DEFAULT);
 
     // Init scr->grad_bar2
     scr->grad_bar2 = lv_bar_create(scr->disp_area);
@@ -73,8 +73,8 @@ void screen_create(ui_manager_t *ui)
     lv_obj_set_size(scr->grad_bar2, 350, 30);
 
     // Set style of scr->grad_bar2
-    lv_obj_set_style_bg_color(scr->grad_bar2, lv_color_hex(0x191a1e), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(scr->grad_bar2, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_color(scr->grad_bar2, lv_color_hex(0x191a1e), LV_PART_MAIN | LV_STATE_DEFAULT);
 
     // Init scr->grad_bar3
     scr->grad_bar3 = lv_bar_create(scr->disp_area);
@@ -85,8 +85,8 @@ void screen_create(ui_manager_t *ui)
     lv_obj_set_size(scr->grad_bar3, 350, 30);
 
     // Set style of scr->grad_bar3
-    lv_obj_set_style_bg_color(scr->grad_bar3, lv_color_hex(0x191a1e), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(scr->grad_bar3, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_color(scr->grad_bar3, lv_color_hex(0x191a1e), LV_PART_MAIN | LV_STATE_DEFAULT);
 
     // Init scr->grad_bar4
     scr->grad_bar4 = lv_bar_create(scr->disp_area);
@@ -97,8 +97,8 @@ void screen_create(ui_manager_t *ui)
     lv_obj_set_size(scr->grad_bar4, 350, 30);
 
     // Set style of scr->grad_bar4
-    lv_obj_set_style_bg_color(scr->grad_bar4, lv_color_hex(0x191a1e), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(scr->grad_bar4, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_color(scr->grad_bar4, lv_color_hex(0x191a1e), LV_PART_MAIN | LV_STATE_DEFAULT);
 
     // Init scr->bars_cont
     scr->bars_cont = lv_obj_create(scr->disp_area);
@@ -109,10 +109,10 @@ void screen_create(ui_manager_t *ui)
     // Set style of scr->bars_cont
     lv_obj_set_style_bg_color(scr->bars_cont, lv_color_hex(0x191a1e), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_width(scr->bars_cont, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_pad_top(scr->bars_cont, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_pad_bottom(scr->bars_cont, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_pad_left(scr->bars_cont, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_top(scr->bars_cont, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_pad_right(scr->bars_cont, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_left(scr->bars_cont, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_radius(scr->bars_cont, 30, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     // Init scr->music_bar1
@@ -179,8 +179,8 @@ void screen_create(ui_manager_t *ui)
     lv_obj_set_size(scr->music_bar6, 20, 150);
 
     // Set style of scr->music_bar6
-    lv_obj_set_style_bg_color(scr->music_bar6, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(scr->music_bar6, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_color(scr->music_bar6, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
 
     // Init scr->container_2
     scr->container_2 = lv_obj_create(scr->disp_area);
@@ -190,15 +190,15 @@ void screen_create(ui_manager_t *ui)
 
     // Set style of scr->container_2
     lv_obj_set_style_bg_grad_stop(scr->container_2, 213, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_grad_color(scr->container_2, lv_color_hex(0xd135f0), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_color(scr->container_2, lv_color_hex(0x123dfe), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_width(scr->container_2, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_pad_top(scr->container_2, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_pad_bottom(scr->container_2, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_pad_left(scr->container_2, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_top(scr->container_2, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_pad_right(scr->container_2, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_left(scr->container_2, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_radius(scr->container_2, 30, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_grad_dir(scr->container_2, 1, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_grad_color(scr->container_2, lv_color_hex(0xd135f0), LV_PART_MAIN | LV_STATE_DEFAULT);
 
     // Init scr->arc_cont
     scr->arc_cont = lv_obj_create(scr->container_2);
@@ -207,13 +207,13 @@ void screen_create(ui_manager_t *ui)
     lv_obj_set_scrollbar_mode(scr->arc_cont, LV_SCROLLBAR_MODE_OFF);
 
     // Set style of scr->arc_cont
-    lv_obj_set_style_bg_color(scr->arc_cont, lv_color_hex(0x191a1e), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(scr->arc_cont, 86, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_color(scr->arc_cont, lv_color_hex(0x191a1e), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_width(scr->arc_cont, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_pad_top(scr->arc_cont, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_pad_bottom(scr->arc_cont, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_pad_left(scr->arc_cont, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_top(scr->arc_cont, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_pad_right(scr->arc_cont, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_left(scr->arc_cont, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_radius(scr->arc_cont, 100, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     // Init scr->pct_num
@@ -241,8 +241,8 @@ void screen_create(ui_manager_t *ui)
     lv_obj_set_size(scr->arc_1, 120, 120);
 
     // Set style of scr->arc_1
-    lv_obj_set_style_arc_width(scr->arc_1, 20, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_arc_rounded(scr->arc_1, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_arc_width(scr->arc_1, 20, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_arc_opa(scr->arc_1, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     // Init scr->label_2
@@ -297,13 +297,13 @@ void screen_create(ui_manager_t *ui)
     lv_obj_set_scrollbar_mode(scr->container_1, LV_SCROLLBAR_MODE_OFF);
 
     // Set style of scr->container_1
-    lv_obj_set_style_bg_color(scr->container_1, lv_color_hex(0xeff8f5), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(scr->container_1, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_color(scr->container_1, lv_color_hex(0xeff8f5), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_color(scr->container_1, lv_color_hex(0x191a1e), LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_pad_top(scr->container_1, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_pad_bottom(scr->container_1, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_pad_left(scr->container_1, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_top(scr->container_1, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_pad_right(scr->container_1, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_left(scr->container_1, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_radius(scr->container_1, 27, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     // Init scr->image_7
@@ -381,10 +381,10 @@ void screen_create(ui_manager_t *ui)
     // Set style of scr->dropdown_cont
     lv_obj_set_style_bg_color(scr->dropdown_cont, lv_color_hex(0x191a1e), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_width(scr->dropdown_cont, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_pad_top(scr->dropdown_cont, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_pad_bottom(scr->dropdown_cont, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_pad_left(scr->dropdown_cont, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_top(scr->dropdown_cont, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_pad_right(scr->dropdown_cont, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_left(scr->dropdown_cont, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_radius(scr->dropdown_cont, 20, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     // Init scr->dropdown_1
@@ -393,29 +393,29 @@ void screen_create(ui_manager_t *ui)
     lv_dropdown_set_dir(scr->dropdown_1, LV_DIR_BOTTOM);
     lv_dropdown_set_symbol(scr->dropdown_1, LV_SYMBOL_DOWN);
     lv_dropdown_set_options(scr->dropdown_1, "Option1\nOption2\nOption3");
-    lv_obj_set_pos(scr->dropdown_1, 43, 15);
+    lv_obj_set_pos(scr->dropdown_1, 40, 15);
     lv_obj_set_size(scr->dropdown_1, 300, 50);
 
     // Set style of scr->dropdown_1
     lv_obj_set_style_text_color(scr->dropdown_1, lv_color_hex(0xffffff), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_color(scr->dropdown_1, lv_color_hex(0x191a1e), LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_border_width(scr->dropdown_1, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_color(scr->dropdown_1, lv_color_hex(0xd135f0), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_border_width(scr->dropdown_1, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_opa(scr->dropdown_1, 164, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_pad_top(scr->dropdown_1, 13, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_pad_left(scr->dropdown_1, 20, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_pad_right(scr->dropdown_1, 20, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_left(scr->dropdown_1, 20, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_radius(scr->dropdown_1, 20, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(scr->dropdown_1, fs_montserratmedium_18, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_grad_color(lv_dropdown_get_list(scr->dropdown_1), lv_color_hex(0xd135f0), LV_PART_SELECTED | LV_STATE_CHECKED);
     lv_obj_set_style_bg_color(lv_dropdown_get_list(scr->dropdown_1), lv_color_hex(0x123dfe), LV_PART_SELECTED | LV_STATE_CHECKED);
     lv_obj_set_style_border_color(lv_dropdown_get_list(scr->dropdown_1), lv_color_hex(0x123dfe), LV_PART_SELECTED | LV_STATE_CHECKED);
     lv_obj_set_style_radius(lv_dropdown_get_list(scr->dropdown_1), 20, LV_PART_SELECTED | LV_STATE_CHECKED);
     lv_obj_set_style_bg_grad_dir(lv_dropdown_get_list(scr->dropdown_1), 2, LV_PART_SELECTED | LV_STATE_CHECKED);
+    lv_obj_set_style_bg_grad_color(lv_dropdown_get_list(scr->dropdown_1), lv_color_hex(0xd135f0), LV_PART_SELECTED | LV_STATE_CHECKED);
     lv_obj_set_style_text_color(lv_dropdown_get_list(scr->dropdown_1), lv_color_hex(0xffffff), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_color(lv_dropdown_get_list(scr->dropdown_1), lv_color_hex(0x191a1e), LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_border_width(lv_dropdown_get_list(scr->dropdown_1), 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_color(lv_dropdown_get_list(scr->dropdown_1), lv_color_hex(0xd135f0), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_border_width(lv_dropdown_get_list(scr->dropdown_1), 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_radius(lv_dropdown_get_list(scr->dropdown_1), 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(lv_dropdown_get_list(scr->dropdown_1), fs_montserratmedium_16, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(lv_dropdown_get_list(scr->dropdown_1), 0, LV_PART_SCROLLBAR | LV_STATE_DEFAULT);
@@ -430,8 +430,8 @@ void screen_create(ui_manager_t *ui)
     lv_obj_set_size(scr->slider_1, 300, 25);
 
     // Set style of scr->slider_1
-    lv_obj_set_style_bg_color(scr->slider_1, lv_color_hex(0x191a1e), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(scr->slider_1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_color(scr->slider_1, lv_color_hex(0x191a1e), LV_PART_MAIN | LV_STATE_DEFAULT);
 
 
 }

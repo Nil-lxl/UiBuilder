@@ -53,6 +53,8 @@ void screen_custom_load_start() {
     // lv_style_set_bg_grad_stop(&music_bar_indicator_style,255);
     // lv_style_set_bg_main_stop(&music_bar_indicator_style,30);
 
+    /* 默认展开dropdown选项 */
+    lv_dropdown_open(scr->dropdown_1);
 
     /* 弧形条样式 */
     lv_style_init(&arc1_indicator_style);

@@ -13,26 +13,26 @@
 ui_manager_t ui_manager;
 
 lv_font_t *fs_montserratmedium_16;
-lv_font_t *fs_montserratmedium_20;
 lv_font_t *fs_montserratmedium_30;
+lv_font_t *fs_montserratmedium_20;
 lv_font_t *fs_montserratmedium_18;
 
 void ui_init(void)
 {
     fs_montserratmedium_16 = ui_font_init(LVGL_FONT_PATH(montserratMedium.ttf), 16);
-    fs_montserratmedium_20 = ui_font_init(LVGL_FONT_PATH(montserratMedium.ttf), 20);
     fs_montserratmedium_30 = ui_font_init(LVGL_FONT_PATH(montserratMedium.ttf), 30);
+    fs_montserratmedium_20 = ui_font_init(LVGL_FONT_PATH(montserratMedium.ttf), 20);
     fs_montserratmedium_18 = ui_font_init(LVGL_FONT_PATH(montserratMedium.ttf), 18);
     if (!fs_montserratmedium_16) {
     	LV_LOG_ERROR("Failed to init fs_montserratmedium_16");
     	return;
     }
-    if (!fs_montserratmedium_20) {
-    	LV_LOG_ERROR("Failed to init fs_montserratmedium_20");
-    	return;
-    }
     if (!fs_montserratmedium_30) {
     	LV_LOG_ERROR("Failed to init fs_montserratmedium_30");
+    	return;
+    }
+    if (!fs_montserratmedium_20) {
+    	LV_LOG_ERROR("Failed to init fs_montserratmedium_20");
     	return;
     }
     if (!fs_montserratmedium_18) {
